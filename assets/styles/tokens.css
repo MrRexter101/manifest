@@ -1,0 +1,180 @@
+/* MANIFEST · tokens
+   The world: Laem Chabang at first light. One low sun above-left lights
+   everything, so every shadow in the product falls down and to the right.
+   A theme here is a place with a lighting model, not a list of hex codes:
+   dark mode is the same port re-lit at night, not an inversion.
+
+   Five layers, each only reads the one above it:
+   1 raw palette (never flips) · 2 atmosphere, far → near · 3 materials
+   (glass, steel, paper) · 4 semantic · components use layer 4 only.
+
+   Three materials, three jobs:
+   glass  = the chrome the app owns (bars, sheets), frosted with a lit lip
+   steel  = anything you tap or earn, painted container steel in safety orange
+   paper  = the participant's own work: label stock, white in both themes,
+            because a label is a physical object, not a theme surface. */
+
+/* ── LAYER 1 · raw palette. Never flips. ── */
+:root{
+  --ink-1000:#000000; --ink-900:#1D1D1F; --ink-800:#2C2C2E; --ink-700:#3A3A3C; --ink-600:#48484A;
+  --grey-500:#646B78; --grey-400:#868C98; --grey-300:#AEB4BE; --grey-200:#CBD3DB; --grey-150:#E2E7EC; --grey-100:#E9EDF1; --grey-50:#F4F6F8;
+  --white:#FFFFFF;
+  --orange-800:#9A3D00; --orange-700:#B84A00; --orange-600:#E05A00; --orange-500:#FF6A00; --orange-400:#FF8A3D; --orange-300:#FFB27A; --orange-100:#FFF1E6;
+  --blue-600:#0066CC; --blue-500:#0071E3; --blue-400:#2997FF;
+  --green-700:#248A3D; --green-500:#34C759; --red-700:#D70015; --red-500:#FF3B30; --amber-500:#FF9F0A;
+
+  /* the sky over the Gulf, day and night (raw, aliased below) */
+  --day-far:#7FA6CC;  --day-air:#BFD3E6;  --day-haze:#E6EEF4;  --day-near:#F7EBDD;
+  --night-far:#050A14; --night-air:#0B1526; --night-haze:#15223A; --night-near:#2E2620;
+
+  /* Answer tiles: four paints you see stacked at the port, on container doors, plus a shape
+     so nobody depends on colour alone. Each passes AA with its ink. */
+  --ans-a:#B8442E; --ans-a-ink:#FFFFFF;   /* triangle · rust red      */
+  --ans-b:#2F5F8A; --ans-b-ink:#FFFFFF;   /* diamond  · steel blue    */
+  --ans-c:#D4A62A; --ans-c-ink:#1D1D1F;   /* circle   · dry-van mustard */
+  --ans-d:#2F7A5C; --ans-d-ink:#FFFFFF;   /* square   · reefer green  */
+
+  /* Label stock: identical in both themes. */
+  --label:#FFFEFB; --label-ink:#1D1D1F; --label-rule:#1D1D1F; --label-mute:#5E6470;
+}
+
+/* ── LAYER 2 + 3 + 4 · light: the port by day (the default, and the projector's room) ── */
+:root{
+  /* atmosphere, far → near: cool sea-haze at altitude, warm sand at the horizon */
+  --sky-far:var(--day-far); --sky-air:var(--day-air); --sky-haze:var(--day-haze); --sky-near:var(--day-near);
+  --sun:rgba(255,247,232,.95); --sun-glow:rgba(255,214,168,.55);
+  --ground-top:#E8EFF5; --ground-mid:#F1F2F1; --ground-bottom:#F7EEE3;
+  /* the horizon: aerial perspective, far is paler and bluer */
+  --hz-far:#B6CADC; --hz-mid:#93ADC6; --hz-near:#7E98B3; --hz-lit:#A9BFD4; --hz-lamp:0;
+  --scene-ink:#14202F; --scene-ink-2:#2B3B52;
+
+  /* glass: frosted chrome with a lit lip */
+  --glass:rgba(255,255,255,.66); --glass-solid:#FFFFFF; --glass-edge:rgba(255,255,255,.98); --glass-rim:rgba(31,49,77,.10);
+  /* steel: safety-orange container paint, lit / body / shade */
+  --steel-lit:#FF8D45; --steel-body:#FF6A00; --steel-shade:#D35400; --steel-ink:#1D1D1F;
+  --steel-cast:2px 6px 14px -5px rgba(178,72,0,.55);
+  /* locked steel: the same model, desaturated. Locked, not broken. */
+  --locked-lit:#E8ECF1; --locked-body:#CCD4DD; --locked-shade:#A8B2BE; --locked-ink:#3F4654;
+  --rib:rgba(0,0,0,.075);
+  /* cast shadows from a sun above-left: offset down-right, tinted from the sky */
+  --cast-1:1px 1px 2px rgba(31,49,77,.06),1px 3px 8px -2px rgba(31,49,77,.07);
+  --cast-2:2px 4px 10px -3px rgba(31,49,77,.10),8px 18px 38px -14px rgba(31,49,77,.20);
+  --cast-3:4px 10px 24px -6px rgba(31,49,77,.16),16px 36px 72px -22px rgba(31,49,77,.30);
+  --bar-cast:0 6px 18px -14px rgba(31,49,77,.35);
+
+  --bg:var(--ground-mid);
+  --surface:#FFFFFF;
+  --surface-2:#F4F6F8;
+  --surface-3:#E9EDF1;
+  --text:#1D1D1F;
+  --text-2:#3C4250;
+  --text-3:#626977;
+  --line:#E2E7EC;
+  --line-strong:#CBD3DB;
+
+  --brand:#FF6A00;            /* fills: dots, bars, pills */
+  --brand-ink:#1D1D1F;        /* type on a brand fill: the safety-sign pairing */
+  --brand-text:#B84A00;       /* brand-coloured type on light */
+  --brand-soft:#FFF1E6;
+  --accent:#0071E3;           /* information, used sparingly */
+  --accent-text:#0066CC;
+  --accent-soft:#E8F1FC;
+  --points:#B84A00;
+  --points-soft:#FFF1E6;
+  --positive:#248A3D; --positive-fill:#34C759; --positive-soft:#E9F7EE;
+  --negative:#D70015; --negative-fill:#FF3B30; --negative-soft:#FDECEE;
+  --focus:#0071E3;
+
+  --chrome:var(--glass);
+  --chrome-solid:var(--glass-solid);
+  --chrome-text:#1D1D1F;
+  --chrome-mute:#626977;
+  --chrome-line:var(--glass-rim);
+  --scrim:rgba(14,22,36,.34);
+
+  --shadow-1:var(--cast-1);
+  --shadow-2:var(--cast-2);
+  --shadow-3:var(--cast-3);
+
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --ease-in-out:cubic-bezier(.77,0,.175,1);
+  --ease-drawer:cubic-bezier(.32,.72,0,1);
+  /* A critically damped spring, sampled: Apple's default UI feel without overshoot. */
+  --spring:linear(0, .006, .025 2.8%, .101 6.1%, .539 18.9%, .721 25.3%, .849 31.5%, .937 38.1%, .968 41.8%, .991 45.7%, 1.006 50.1%, 1.015 55%, 1.017 63.9%, 1.001);
+  /* A crane setting a box down: arrives, settles once. Only for things that land. */
+  --settle:linear(0, .2 8%, .62 22%, .9 36%, 1.025 48%, 1.03 56%, 1.004 72%, 1);
+  --r-sm:10px; --r-md:14px; --r-lg:22px; --r-xl:30px; --r-pill:999px;
+
+  --font-ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter",system-ui,"Segoe UI",Roboto,sans-serif;
+  --font-display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,"Segoe UI",Roboto,sans-serif;
+  --font-mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --tabbar:64px; --topbar:52px;
+  color-scheme:light dark;
+}
+
+/* ── night: the same port re-lit. The sun becomes a moon above-left, the
+   horizon warms with sodium lamps, crane lights come on. Guarded so an
+   explicit light choice beats a dark phone. ── */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --sky-far:var(--night-far); --sky-air:var(--night-air); --sky-haze:var(--night-haze); --sky-near:var(--night-near);
+    --sun:rgba(214,226,255,.55); --sun-glow:rgba(120,150,210,.18);
+    --ground-top:#070C16; --ground-mid:#0B111C; --ground-bottom:#15141A;
+    --hz-far:#14203A; --hz-mid:#1C2B47; --hz-near:#22334F; --hz-lit:#31466A; --hz-lamp:1;
+    --scene-ink:#F2F5FA; --scene-ink-2:#B7C3D6;
+    --glass:rgba(22,28,40,.64); --glass-solid:#161C28; --glass-edge:rgba(255,255,255,.20); --glass-rim:rgba(255,255,255,.07);
+    --steel-lit:#FF9A57; --steel-body:#FF7A1A; --steel-shade:#C65000; --steel-ink:#0B0B0D;
+    --steel-cast:2px 6px 16px -5px rgba(0,0,0,.7);
+    --locked-lit:#2E3746; --locked-body:#232B38; --locked-shade:#171D27; --locked-ink:#9AA3B2;
+    --rib:rgba(0,0,0,.16);
+    --cast-1:1px 1px 2px rgba(0,0,0,.5);
+    --cast-2:2px 4px 10px -3px rgba(0,0,0,.5),8px 18px 38px -14px rgba(0,0,0,.6);
+    --cast-3:4px 10px 24px -6px rgba(0,0,0,.55),16px 36px 72px -22px rgba(0,0,0,.7);
+    --bar-cast:0 6px 18px -12px rgba(0,0,0,.7);
+    --bg:var(--ground-mid); --surface:#141A25; --surface-2:#1C2330; --surface-3:#273040;
+    --text:#F2F4F8; --text-2:#C9D0DB; --text-3:#98A1B0;
+    --line:#252D3A; --line-strong:#364152;
+    --brand:#FF7A1A; --brand-ink:#0B0B0D; --brand-text:#FF9F4D; --brand-soft:#3A220F;
+    --accent:#2997FF; --accent-text:#4DA6FF; --accent-soft:#0A2540;
+    --points:#FF9F4D; --points-soft:#3A220F;
+    --positive:#30D158; --positive-fill:#30D158; --positive-soft:#0F2E18;
+    --negative:#FF453A; --negative-fill:#FF453A; --negative-soft:#3A1412;
+    --focus:#2997FF;
+    --chrome-text:#F2F4F8; --chrome-mute:#98A1B0;
+    --scrim:rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"]{
+  --sky-far:var(--night-far); --sky-air:var(--night-air); --sky-haze:var(--night-haze); --sky-near:var(--night-near);
+  --sun:rgba(214,226,255,.55); --sun-glow:rgba(120,150,210,.18);
+  --ground-top:#070C16; --ground-mid:#0B111C; --ground-bottom:#15141A;
+  --hz-far:#14203A; --hz-mid:#1C2B47; --hz-near:#22334F; --hz-lit:#31466A; --hz-lamp:1;
+  --scene-ink:#F2F5FA; --scene-ink-2:#B7C3D6;
+  --glass:rgba(22,28,40,.64); --glass-solid:#161C28; --glass-edge:rgba(255,255,255,.20); --glass-rim:rgba(255,255,255,.07);
+  --steel-lit:#FF9A57; --steel-body:#FF7A1A; --steel-shade:#C65000; --steel-ink:#0B0B0D;
+  --steel-cast:2px 6px 16px -5px rgba(0,0,0,.7);
+  --locked-lit:#2E3746; --locked-body:#232B38; --locked-shade:#171D27; --locked-ink:#9AA3B2;
+  --rib:rgba(0,0,0,.16);
+  --cast-1:1px 1px 2px rgba(0,0,0,.5);
+  --cast-2:2px 4px 10px -3px rgba(0,0,0,.5),8px 18px 38px -14px rgba(0,0,0,.6);
+  --cast-3:4px 10px 24px -6px rgba(0,0,0,.55),16px 36px 72px -22px rgba(0,0,0,.7);
+  --bar-cast:0 6px 18px -12px rgba(0,0,0,.7);
+  --bg:var(--ground-mid); --surface:#141A25; --surface-2:#1C2330; --surface-3:#273040;
+  --text:#F2F4F8; --text-2:#C9D0DB; --text-3:#98A1B0;
+  --line:#252D3A; --line-strong:#364152;
+  --brand:#FF7A1A; --brand-ink:#0B0B0D; --brand-text:#FF9F4D; --brand-soft:#3A220F;
+  --accent:#2997FF; --accent-text:#4DA6FF; --accent-soft:#0A2540;
+  --points:#FF9F4D; --points-soft:#3A220F;
+  --positive:#30D158; --positive-fill:#30D158; --positive-soft:#0F2E18;
+  --negative:#FF453A; --negative-fill:#FF453A; --negative-soft:#3A1412;
+  --focus:#2997FF;
+  --chrome-text:#F2F4F8; --chrome-mute:#98A1B0;
+  --scrim:rgba(0,0,0,.55);
+}
+
+@media (prefers-reduced-transparency:reduce){
+  :root{ --chrome:var(--chrome-solid); --glass:var(--glass-solid); }
+}
+@media (prefers-contrast:more){
+  :root{ --chrome:var(--chrome-solid); --glass:var(--glass-solid); --line:var(--line-strong); --text-3:var(--text-2); }
+}

@@ -1,0 +1,41 @@
+Delivery No,PO No,Date,Customer,Area,Carrier,Window End,Arrived,Cases Ordered,Cases Delivered,Weight,Temp °C,Notes
+DN-267007,PO-58247,06/10/2569,Coral Coast – Jomtien,Jomtien,KLD Fleet,10:00,09:35,120,120,1320,3.1,
+DN-267038,PO-58284,06/10/2569,Coral Coast – Naklua,Naklua,KLD Fleet,10:00,10:40,95,95,1040,3.4,Road works diversion
+DN-267069,PO-58321,06/10/2569,Sea Breeze Kitchen,Pattaya,KLD Fleet,11:00,10:20,42,42,400,2.8,
+DN-267100,PO-58358,06/10/2569,Seaview Noodle House,Si Racha,KLD Fleet,11:00,09:50,30,30,280,3.0,
+DN-267131,PO-58395,06/10/2569,Rayong Riverside Grill,Rayong,Eastern Reefer Transport,14:00,13:15,55,55,520,3.6,
+DN-267162,PO-58432,06/10/2569,Rim Haad Minimart,Naklua,KLD Fleet,16:00,14:30,64,64,800,,
+DN-267212,PO-58469,07/10/2569,Coral Coast – Beach Road,Pattaya,KLD Fleet,10:30,09:55,150,150,1650,2.6,
+DN-267243,PO-58506,07/10/2569,Coral Coast – Wong Amat,Naklua,ERT,10:00,09:40,110,110,1.21,3.3,
+DN-267274,PO-58543,07/10/2569,Baan Talay Seafood,Jomtien,KLD Fleet,11:00,10:15,48,48,460,2.9,
+DN-267274,PO-58543,07/10/2569,Baan Talay Seafood,Jomtien,KLD Fleet,11:00,10:15,48,48,460,2.9,
+DN-267305,PO-58580,07/10/2569,Jomtien Fresh Mart,Jomtien,EASTERN REEFER,16:00,15:20,72,70,880,3.8,2 cases damaged in transit
+DN-267336,PO-58617,07/10/2569,Ban Phe Minimart,Rayong,Eastern Reefer Transport,16:00,15:05,58,58,720,,
+DN-267367,PO-58654,07/10/2569,Coral Coast – Pratumnak,Pattaya,KLD Fleet,10:00,09:20,105,105,1160,3.2,
+DN-267417,PO-58691,2026-10-08,Coral Coast – Jomtien ,Jomtien,KLD Fleet,10:00,10:25,125,125,1380,3.5,Road works diversion
+DN-267448,PO-58728,2026-10-08,Sabai Corner Bistro,Pattaya,KLD Fleet,11:00,10:05,38,38,360,2.7,
+DN-267479,PO-58765,2026-10-08,Coral Coast – Beach Road,Pattaya,KLD Fleet,10:30,09:10,140,140,1540,2.9,
+DN-267480,PO-58765,2026-10-08,Coral Coast – Beach Road,Pattaya,KLD Fleet,10:30,10:05,60,60,660,3.1,2nd truck: balance of PO
+DN-267541,PO-58839,2026-10-08,Si Racha Harbour Mart,Si Racha,KLD Fleet,16:00,13:40,80,80,1000,,
+DN-267572,PO-58876,2026-10-08,Rayong Riverside Grill,Rayong,ERT,14:00,13:30,50,50,480,7.1,
+DN-267622,PO-58913,10/9/2026,Coral Coast – Naklua,Naklua,KLD Fleet,10:00,10:50,100,94,1030,6.2,6 cases chilled rejected at receiving
+DN-267653,PO-58950,09/10/2569,Coral Coast – Wong Amat,Naklua,Eastern Refer Trans.,10:00,09:30,115,115,1.26,3.0,
+DN-267684,PO-58987,10/9/2026,Sea Breeze Kitchen ,Pattaya,KLD Fleet,11:00,11:00,45,45,430,3.3,
+DN-267715,PO-59024,09/10/2569,Baan Talay Seafood,Jomtien,KLD Fleet,11:00,11:35,52,52,490,5.8,
+DN-267746,PO-59061,10/9/2026,Ban Phe Minimart,Rayong,EASTERN REEFER,16:00,14:50,66,66,820,3.9,
+DN-267777,PO-59098,09/10/2569,Coral Coast – Pratumnak,Pattaya,KLD Fleet,10:00,09:45,98,88,970,3.4,Short: KLD-1402 out of stock
+DN-267827,PO-59135,10/10/2569,Coral Coast – Jomtien ,Jomtien,KLD Fleet,10:00,09:30,130,130,1430,3.0,
+DN-267858,PO-59172,10/10/2569,Jomtien Fresh Mart,Jomtien,ERT,16:00,15:40,75,75,940,4.6,
+DN-267889,PO-59209,10/10/2569,Coral Coast – Beach Road,Pattaya,KLD Fleet,10:30,10:00,135,135,1480,2.8,
+DN-267920,PO-59246,10/10/2569,Rayong Riverside Grill,Rayong,Eastern Reefer Transport,14:00,13:20,48,48,0.46,3.7,
+DN-267889,PO-59209,10/10/2569,Coral Coast – Beach Road,Pattaya,KLD Fleet,10:30,10:00,135,135,1480,2.8,
+DN-267951,PO-59283,10/10/2569,Rim Haad Minimart,Naklua,KLD Fleet,16:00,15:10,60,60,750,4.2,
+DN-268032,PO-59320,11/10/2569,Coral Coast – Naklua,Naklua,KLD Fleet,10:00,09:50,105,105,1160,3.1,
+DN-268063,PO-59357,11/10/2569,Coral Coast – Wong Amat,Naklua,ERT,10:00,09:55,112,112,1230,3.4,
+DN-268094,PO-59394,10/11/2026,Sabai Corner Bistro,Pattaya,KLD Fleet,11:00,10:30,36,36,340,2.6,
+DN-268125,PO-59431,11/10/2569,Seaview Noodle House,Si Racha,KLD Fleet,11:00,10:10,28,28,270,3.2,
+DN-268237,PO-59468,12/10/2569,Coral Coast – Pratumnak,Pattaya,Eastern Refer Trans.,10:00,09:25,102,102,1.12,3.3,
+DN-268268,PO-59505,12/10/2569,Coral Coast – Jomtien,Jomtien,KLD Fleet,10:00,09:40,128,128,1410,2.9,
+DN-268299,PO-59542,12/10/2569,Si Racha Harbour Mart,Si Racha,Eastern Reefer Transport,16:00,14:15,82,77,960,,Short picked 5 cases
+DN-268330,PO-59579,12/10/2569,Sea Breeze Kitchen,Pattaya,KLD Fleet,11:00,11:20,44,44,420,3.5,
+DN-268361,PO-59616,12/10/2569,Ban Phe Minimart,Rayong,EASTERN REEFER,16:00,15:30,62,62,780,3.6,

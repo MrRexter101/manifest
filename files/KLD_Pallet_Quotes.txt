@@ -1,0 +1,58 @@
+KLD PALLET QUOTES: 3 quotes + broker notes
+All three quotes are dated 9 Oct 2026. Requested by Khun Ploy (KLD procurement).
+
+--- QUOTE A (1 of 3) ---
+Rayong Polymer Works Co., Ltd. (pallet maker, Rayong, Thailand)
+Quotation No. RPW-Q26-1041, date 9 Oct 2026
+To: Khun Ploy, Koh Larn Distribution Co., Ltd.
+Item: Plastic pallet RPW-N1210, 1200 × 1000 mm, nestable, 4-way entry, dynamic load 1,000 kg, colour blue
+Qty 2,000 × THB 1,180.00 = THB 2,360,000.00 (excl. VAT). VAT 7% THB 165,200.00. Total THB 2,525,200.00
+Delivery: DAP KLD DC, Si Racha (Incoterms 2020)
+Material: 100% virgin HDPE, food-grade. Certificate attached.
+Lead time: 21 days from PO
+Payment: Net 30 days
+MOQ: 500 pallets
+Validity: 30 days
+Warranty: 3 years
+Signed: Naree S., Sales Manager
+
+--- QUOTE B (2 of 3) ---
+Ningbo Everlift Plastics Co., Ltd. (pallet maker, Ningbo, China)
+Quotation No. NEP-QT-261009-07, date 9 Oct 2026
+To: Khun Ploy, Koh Larn Distribution Co., Ltd.
+Item: Plastic pallet EL-1210N, 1200 × 1000 mm, nestable, 4-way entry, dynamic load 1,000 kg, colour blue
+Qty 2,000 × USD 29.50 = USD 59,000.00 (FOB Ningbo)
+Price term: FOB Ningbo (Incoterms 2020)
+Material: 100% virgin HDPE, food-contact certified (EU 10/2011)
+Packing: Nested, about 500 pcs per 40' HC container
+Lead time: 30 days production + about 7 days sailing to Laem Chabang
+Payment: 30% deposit with PO, 70% before shipment (T/T)
+MOQ: 2,000 pcs
+Validity: 15 days
+Warranty: 2 years
+Signed: Kevin Zhang, Overseas Sales
+
+--- QUOTE C (3 of 3) ---
+Siam Pallet Trading Co., Ltd. (pallet distributor, Lat Krabang, Bangkok)
+Quotation No. QT2569/10-0217, date 9 Oct 2026
+To: Khun Ploy, Koh Larn Distribution Co., Ltd.
+Item: Plastic pallet SPT-1210, 1200 × 1000 mm, nestable, 4-way entry, dynamic load 1,000 kg, colour black*
+Qty 2,000 × THB 985.00 = THB 1,970,000.00 (excl. VAT). VAT 7% THB 137,900.00. Total THB 2,107,900.00
+Delivery: EXW Lat Krabang warehouse (Incoterms 2020). Buyer to collect.
+Lead time: 7 days, ex stock
+Payment: Net 60 days
+MOQ: 200 pallets
+Validity: 14 days
+Warranty: 1 year
+Signed: Wichai T., Sales Executive
+* Material: recycled PP blend. Not certified for direct food contact.
+
+--- PAGE 4: BROKER & FORWARDER NOTES (from KLD finance) ---
+These are the ONLY rates to use.
+- Exchange rate agreed with finance for this exercise: USD 1 = THB 33.00.
+- Ningbo to Laem Chabang: 4 × 40' HC containers, ocean freight USD 850 per container; cargo insurance USD 160 total.
+- Import duty for this case: 5% of CIF value (broker's note; in real life confirm the AHTN code and any FTA rate with your broker).
+- Local charges at Laem Chabang (THC, D/O, clearance, trucking 20 km to Si Racha): THB 9,500 per container.
+- VAT 7% is recoverable on all three, so compare excluding VAT.
+- Supplier C collection: KLD must collect. Carrier rate Lat Krabang to Si Racha THB 4,200 per trip, 250 pallets per trip (8 trips).
+THC = terminal handling charge. D/O = delivery order fee. 40' HC = 40-foot high-cube container.

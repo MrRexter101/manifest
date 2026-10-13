@@ -1,0 +1,8 @@
+# Trainer-only: script, answer keys, case bible, deck, AI outputs. Never publish.
+trainer/
+research/
+.DS_Store
+node_modules/
+trainer/generators/doc.json
+HANDOFF.md
+.impeccable/review/

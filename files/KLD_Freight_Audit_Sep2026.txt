@@ -1,0 +1,37 @@
+ERT freight audit, September 2026 (fictional practice data). All amounts THB, excluding VAT.
+
+RATE CARD (THB per trip)
+Zone,4-wheel reefer,6-wheel reefer,10-wheel reefer
+Z1 Si Racha / Laem Chabang,1800,2600,4200
+Z2 Pattaya / Naklua / Jomtien,2200,3200,5000
+Z3 Sattahip / Ban Chang,2900,4100,6300
+Z4 Rayong city / Map Ta Phut,3400,4800,7400
+
+CONTRACT RULES
+- Clause 3.2 Fuel surcharge: base diesel THB 30.00/L. +1% of the trip rate for every full THB 0.50 above base, using the previous month's average.
+- August 2026 average diesel was THB 31.50, so September 2026 invoices carry +3%.
+- Clause 4.1 Waiting time: first 2 hours free, then THB 300 per started hour.
+
+ERT INVOICE ERT-INV-2609-0147, trips 1 to 29 Sep 2026
+Line,Date,Delivery ref,Destination,Zone,Truck,Rate,Fuel %,Fuel,Wait h,Wait charge,Line total
+1,01 Sep,DN-259848,Rayong Riverside Grill,Z4,6-wheel reefer,4800,3%,144,0.5,0,4944
+2,02 Sep,DN-260060,Coral Coast – Wong Amat,Z2,10-wheel reefer,5000,3%,150,1.0,0,5150
+3,03 Sep,DN-260272,Si Racha Harbour Mart,Z1,4-wheel reefer,1800,3%,54,0.0,0,1854
+4,04 Sep,DN-260484,Sattahip Bay Restaurant,Z3,6-wheel reefer,4100,3%,123,2.5,300,4523
+5,07 Sep,DN-261106,Coral Coast – Jomtien,Z2,10-wheel reefer,5000,3%,150,0.0,0,5150
+6,08 Sep,DN-261318,Map Ta Phut Staff Canteen,Z4,10-wheel reefer,7400,3%,222,2.0,0,7622
+7,09 Sep,DN-261530,Coral Coast – Naklua,Z2,6-wheel reefer,4100,3%,123,0.0,0,4223
+8,10 Sep,DN-261742,Ban Chang Minimart,Z3,4-wheel reefer,2900,3%,87,0.0,0,2987
+9,11 Sep,DN-261954,Coral Coast – Beach Road,Z2,6-wheel reefer,3200,3%,96,3.5,600,3896
+10,14 Sep,DN-262576,Si Racha Harbour Mart,Z1,6-wheel reefer,2600,3%,78,0.0,0,2678
+11,15 Sep,DN-262788,Rayong Riverside Grill,Z4,10-wheel reefer,7400,6%,444,0.0,0,7844
+12,16 Sep,DN-263000,Baan Talay Seafood,Z2,4-wheel reefer,2200,3%,66,1.0,0,2266
+13,17 Sep,DN-263212,Sattahip Bay Restaurant,Z3,10-wheel reefer,6300,3%,189,3.0,300,6789
+14,18 Sep,DN-263424,Laem Chabang Port Canteen,Z1,6-wheel reefer,2600,3%,78,1.5,300,2978
+15,21 Sep,DN-264046,Coral Coast – Pratumnak,Z2,6-wheel reefer,3200,3%,96,0.0,0,3296
+16,22 Sep,DN-264258,Map Ta Phut Staff Canteen,Z4,6-wheel reefer,4800,3%,144,0.0,0,4944
+17,24 Sep,DN-264675,Coral Coast – Jomtien,Z2,10-wheel reefer,5000,3%,150,2.5,300,5450
+18,24 Sep,DN-264675,Coral Coast – Jomtien,Z2,10-wheel reefer,5000,3%,150,2.5,300,5450
+19,28 Sep,DN-265502,Ban Chang Minimart,Z3,6-wheel reefer,4100,3%,123,0.0,0,4223
+20,29 Sep,DN-265714,Coral Coast – Wong Amat,Z2,6-wheel reefer,3200,3%,96,0.5,0,3296
+Invoice total: 89563

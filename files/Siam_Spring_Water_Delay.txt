@@ -1,0 +1,39 @@
+SIAM SPRING WATER DELAY: THEIR EMAIL + OUR CLAUSE 8
+
+----- EMAIL -----
+From: Pimchanok K., Sales Coordinator, Siam Spring Water Co., Ltd.
+To: Khun Ploy, Procurement Officer, Koh Larn Distribution Co., Ltd.
+Sent: Mon 12 Oct 2026, 16:40
+Subject: PO KLD-PO-26-1187: new delivery date
+
+Dear Khun Ploy,
+
+I am sorry to inform you that we cannot deliver PO KLD-PO-26-1187 on Thursday 15 October 2026 as planned.
+
+Order: 3,000 cases of KLD-1001 Drinking water 600 ml × 24.
+
+On Saturday 10 October, one of our production lines broke down. Our maintenance team is waiting for a spare part, and we expect the line to run again on Wednesday 14 October.
+
+Our new delivery date is Sunday 18 October 2026, to your Si Racha DC.
+
+We apologise for the inconvenience and thank you for your understanding. I will update you if anything changes.
+
+Best regards,
+Pimchanok K.
+Sales Coordinator
+Siam Spring Water Co., Ltd.
+
+----- KLD STANDARD PURCHASE TERMS (excerpt) -----
+These terms apply to every KLD purchase order, including PO KLD-PO-26-1187.
+
+8. Late delivery
+If a delivery arrives more than 2 days after the delivery date on the purchase order, the Supplier shall pay any expedite freight that KLD incurs because of the late delivery. KLD will send the Supplier copies of the freight invoices.
+
+----- KLD STOCK NOTE (Wed 14 Oct 2026, 07:00) -----
+KLD-1001 Drinking water 600 ml × 24
+On hand: 420 cases
+Average demand: 40 cases per day
+Coral Coast Hotels is hosting a conference 16–18 Oct 2026: demand about double on those days
+Fri 23 Oct 2026 is a public holiday (Chulalongkorn Day)
+
+All companies and people are fictional (training use only).

@@ -1,0 +1,146 @@
+KLD DOCUMENT PACK
+Four documents for the contract and SOP questions:
+1. Supply Agreement, KLD and Coral Coast Hotels (excerpt)
+2. Carrier Agreement, KLD and Eastern Reefer Transport (excerpt)
+3. SOP-WH-07 v3 Receiving chilled goods
+4. SOP-WH-07 v2 Receiving chilled goods (superseded)
+
+============================================================
+DOCUMENT 1 of 4
+SUPPLY AGREEMENT (EXCERPT)
+Between Koh Larn Distribution Co., Ltd. ("KLD") and Coral Coast Hotels Co., Ltd. (the "Customer")
+Agreement No. KLD-CCH-2026-01  |  Effective date: 1 Jan 2026
+This excerpt contains clauses 4, 5, 6, 7, 9 and 12 only. "Products" means the food and beverages KLD supplies. "Site" means each Customer hotel listed in Schedule 1.
+============================================================
+
+4. DELIVERY
+4.1 Orders. The Customer shall place orders through the KLD order portal or by email before 14:00 for delivery on the next day.
+4.2 Delivery windows. KLD shall deliver to each Site within the delivery window for that Site set out in Schedule 1. Deliveries that arrive outside the delivery window may be refused by the Customer.
+4.3 Delivery notes. Each delivery shall come with a delivery note showing the purchase order number, the Products, the number of cases and the time of arrival. The Customer's receiving staff shall sign the delivery note.
+
+5. SERVICE LEVELS
+5.1 OTIF target. KLD shall achieve a monthly on-time-in-full ("OTIF") rate of at least 95%.
+5.2 How OTIF is measured. A delivery is on time if it arrives within the delivery window, and in full if all cases ordered are delivered. Monthly OTIF is the number of deliveries that are both on time and in full, divided by the total number of deliveries in that month. KLD shall report OTIF for each month by the 5th working day of the next month.
+5.3 Service credit. If the monthly OTIF is below 95%, KLD shall give the Customer a service credit of 1% of that month's invoice value for each full percentage point below 95%, capped at 5% of that month's invoice value. The service credit shall be deducted from the next invoice.
+
+6. QUALITY AND TEMPERATURE
+6.1 Cold chain. KLD shall keep chilled Products at 0–4 °C and frozen Products at -18 °C or colder from its distribution centre until delivery.
+6.2 Chilled receiving temperature. Chilled Products shall be at or below 4 °C when received at the Site. The Customer may reject any chilled delivery above 5 °C.
+6.3 Temperature records. KLD shall provide the temperature records for any delivery within 2 working days of the Customer's request.
+
+7. PACKAGING AND LABELLING
+7.1 Packaging. Products shall be delivered in the manufacturer's original packaging, clean, dry and undamaged.
+7.2 Labels. Each case shall show the product name, batch or lot number and expiry date in Thai or English.
+7.3 Pallet loads. Pallet loads shall be stretch-wrapped and no higher than 1.6 m, including the pallet.
+7.4 Pallets and packaging. All pallets entering the Customer's kitchens, cold rooms and receiving bays shall be food-grade, virgin HDPE or an approved equivalent, free of recycled content, with a certificate of conformity available on request. Wooden pallets and recycled-plastic pallets shall not be used.
+
+9. LIABILITY
+9.1 Limits. Neither party is liable to the other for indirect or consequential loss, including loss of profit, revenue or goodwill. Each party's total liability under this Agreement in any contract year is limited to the total value of the invoices issued in that contract year. This clause does not limit liability for death or personal injury caused by negligence, or for fraud.
+
+12. TERMINATION
+12.1 Termination for convenience. Either party may end this Agreement for any reason by giving the other party at least 90 days' written notice.
+
+[End of excerpt. Schedule 1 (Sites and delivery windows) is not included.]
+
+============================================================
+DOCUMENT 2 of 4
+CARRIER AGREEMENT (EXCERPT)
+Between Koh Larn Distribution Co., Ltd. ("KLD") and Eastern Reefer Transport Co., Ltd. ("ERT")
+Agreement No. KLD-ERT-2026-02  |  Effective date: 1 Jan 2026
+This excerpt contains clauses 3, 4 and 6 only.
+============================================================
+
+3. RATES AND FUEL SURCHARGE
+3.1 Trip rates. KLD shall pay ERT the trip rate for each zone and truck type in Schedule A (rate card). Schedule A is not included in this excerpt.
+3.2 Fuel surcharge. The base diesel price is THB 30.00 per litre. For every full THB 0.50 by which the previous month's average diesel price is above the base price, ERT may add 1% to the trip rate. No fuel surcharge applies when the average is at or below the base price.
+3.3 Invoices. ERT shall invoice KLD monthly. KLD shall pay correct invoices within 30 days of receipt.
+
+4. WAITING TIME
+4.1 Waiting time. The first 2 hours of waiting at any loading or delivery point are free. After that, ERT may charge THB 300 for each started hour of waiting.
+4.2 Waiting records. Waiting time starts at the booked arrival time or the actual arrival time, whichever is later. It must be written on the delivery note and signed by the receiver.
+
+6. LIABILITY AND CLAIMS
+6.1 Responsibility. ERT is responsible for loss of or damage to goods from loading until delivery, including damage caused by failure of the reefer unit.
+6.2 Exclusions. ERT is not responsible for loss or damage caused by KLD's own packing.
+6.3 Liability cap. ERT's liability is limited to THB 50,000 per consignment, unless KLD declares a higher value in writing before loading.
+6.4 Declared value. When KLD declares a higher value, ERT may charge an extra insurance fee agreed in writing before loading.
+6.5 Claims. KLD must make any claim in writing within 7 days of delivery. ERT is not required to pay claims received after this time.
+
+[End of excerpt.]
+
+============================================================
+DOCUMENT 3 of 4
+SOP-WH-07  RECEIVING CHILLED GOODS
+Version 3  |  Effective: 1 Aug 2026  |  Replaces: version 2
+Owner: Khun Arthit, Warehouse Manager  |  Site: KLD Si Racha DC
+Status: Current
+============================================================
+
+1. PURPOSE
+1.1 To make sure chilled goods are received safely and enter the chilled room (0–4 °C) at the right temperature.
+
+2. SCOPE
+2.1 All inbound deliveries of chilled goods at the Si Racha DC, from any supplier or carrier.
+
+3. ROLES
+3.1 Receiving clerk: checks documents, probes the goods and records the results.
+3.2 Shift leader: handles rejected pallets and signs the receiving log at the end of each shift.
+3.3 QA officer: checks quarantined pallets and decides to release or reject them.
+
+4. EQUIPMENT
+4.1 Calibrated probe thermometers and alcohol wipes.
+4.2 Electric pallet jacks and the 2 counterbalance forklifts. There are no reach trucks at the Si Racha DC.
+
+5. BEFORE UNLOADING
+5.1 At the start of each shift, check each probe in ice water. It must read 0 °C ± 0.5 °C. If it does not, do not use it and tell the shift leader.
+5.2 Check the delivery note against the purchase order: PO number, products and number of cases.
+5.3 Record the temperature shown on the truck's reefer display.
+
+6. PROBING AND DECISION
+6.1 Probe the core temperature of 2 cases per pallet: one from the top layer and one from the middle of the pallet. Clean the probe with an alcohol wipe before each case.
+6.2 Use the higher of the two readings.
+6.3 4.0 °C or below: accept.
+6.4 4.1 to 5.0 °C: accept, move the pallet to the quarantine area and inform the QA officer.
+6.5 Above 5.0 °C: reject the pallet. Write the reading and the reason on the delivery note and inform the shift leader.
+
+7. PUT-AWAY
+7.1 Move accepted pallets into the chilled room within 20 minutes of unloading.
+
+8. RECORDS
+8.1 Record every reading in the receiving log within 15 minutes of probing: date, time, PO number, supplier, pallet ID, both readings, decision and the clerk's name.
+8.2 The shift leader checks and signs the receiving log at the end of each shift.
+
+[End of SOP-WH-07 version 3.]
+
+============================================================
+DOCUMENT 4 of 4
+SOP-WH-07  RECEIVING CHILLED GOODS
+Version 2  |  Effective: 1 Mar 2024
+Owner: Warehouse Manager  |  Site: KLD Si Racha DC
+Status: SUPERSEDED on 31 Jul 2026. Replaced by version 3.
+============================================================
+
+1. PURPOSE
+1.1 To make sure chilled goods are received in good condition and stored in the chilled room.
+
+2. SCOPE
+2.1 All inbound deliveries of chilled goods at the Si Racha DC.
+
+3. ROLES
+3.1 Receiving clerk: checks documents, probes the goods and records the results.
+3.2 Shift leader: handles rejected pallets.
+
+4. STEPS
+4.1 Check the delivery note against the purchase order.
+4.2 Probe the core temperature of 1 case per pallet.
+4.3 4.0 °C or below: accept.
+4.4 4.1 to 8.0 °C: accept and tell the shift leader.
+4.5 Above 8.0 °C: reject the pallet and write the reason on the delivery note.
+4.6 Move accepted pallets into the chilled room as soon as possible.
+
+5. RECORDS
+5.1 Record the readings in the receiving log by the end of the shift.
+
+[End of SOP-WH-07 version 2.]
+
+All companies, people and documents in this pack are fictional (training use only).
