@@ -243,14 +243,14 @@ components:
 
 Manifest lives in one place: the container port at Laem Chabang just after dawn. One low sun sits above-left, so every shadow in the product falls down and to the right, tinted from the sky rather than black. A theme here is a place with a lighting model, not a list of hex codes. Night mode is the same port re-lit: the sun becomes a cool moon, the horizon warms, and the crane lamps on the skyline come on. It is never an inversion.
 
-The interface reads as an Apple-made app (SF Pro, iOS large titles, frosted bars, spring motion, tabular numerals) built from three modelled materials, each with a lit crown, a body and a shaded belly. Frosted glass is the chrome the app owns. Painted container steel in safety orange is anything you tap or earn. Label paper is the participant's own work, and it stays white in both themes because a label is a physical object. The sky scene (far haze down to warm sand, a port horizon of cranes, a ship and container stacks) opens the phone's join, greeting and route screens and sits behind the projector for the room's moments.
+The interface reads as an Apple-made app (SF Pro, iOS large titles, frosted bars, spring motion, tabular numerals) built from three modeled materials, each with a lit crown, a body and a shaded belly. Frosted glass is the chrome the app owns. Painted container steel in safety orange is anything you tap or earn. Label paper is the participant's own work, and it stays white in both themes because a label is a physical object. The sky scene (far haze down to warm sand, a port horizon of cranes, a ship and container stacks) opens the phone's join, greeting and route screens and sits behind the projector for the room's moments.
 
-Density is calm and phone-first: one clear thing to do per screen, a 640px column, generous 20px card padding. The projector is a light keynote stage read from the back of a bright room. The host console is a macOS-style three-pane workspace on the same ground. The system rejects flat white SaaS, Kahoot candy colours, and the dark neon "AI" look.
+Density is calm and phone-first: one clear thing to do per screen, a 640px column, generous 20px card padding. The projector is a light keynote stage read from the back of a bright room. The host console is a macOS-style three-pane workspace on the same ground. The system rejects flat white SaaS, Kahoot candy colors, and the dark neon "AI" look.
 
 **Key Characteristics:**
 - One light source, above-left. Every cast shadow offsets down-right and is blurred.
 - Three materials with three jobs: glass for chrome, steel for action and reward, paper for what the participant owns.
-- Safety orange is the only brand colour; information blue is used sparingly.
+- Safety orange is the only brand color; information blue is used sparingly.
 - Containers are the recurring unit: route stops, rank stacks, podium blocks, table swatches and answer tiles are all painted boxes with ribs.
 - Night is the same place re-lit, never a palette swap.
 
@@ -282,11 +282,11 @@ A cool sea-haze atmosphere over warm sand, with one safety-orange paint for ever
 - **Status** (positive, negative and their fills and softs): verdicts, correct ranks, toasts and connection dots.
 
 ### Named Rules
-**The One Paint Rule.** Safety orange is the only brand colour, and it appears as steel (gradient plus ribs) on what you tap or earn. A second accent hue never takes its job.
+**The One Paint Rule.** Safety orange is the only brand color, and it appears as steel (gradient plus ribs) on what you tap or earn. A second accent hue never takes its job.
 
 **The Same Port Rule.** Dark mode re-lights the scene: night sky stops, a moon in place of the sun, lamps on the cranes, black-based casts. Label stock and answer paints do not change.
 
-**The Shape Plus Colour Rule.** An answer is never identified by colour alone; every tile and result bar carries its shape.
+**The Shape Plus Color Rule.** An answer is never identified by color alone; every tile and result bar carries its shape.
 
 ## Typography
 
@@ -310,11 +310,11 @@ A cool sea-haze atmosphere over warm sand, with one safety-orange paint for ever
 ### Named Rules
 **The Tabular Rule.** Every changing number (points, XP, timers, counts, ranks) uses tabular numerals, so digits never jitter.
 
-**The Sentence Case Rule.** Type is sentence case throughout. Uppercase appears only as mono data on label stock and in the room code.
+**The Sentence Case Rule.** Type is sentence case throughout. Uppercase appears only as mono data on label stock, in the room code, and in the four lab-type tags (READ, DRAFT, SCREEN, EXPLAIN: 11px, 700, 0.04em, on a status wash), which are short codes stamped beside a title, never headings.
 
 ## Layout
 
-The phone app is designed at 375px and centres in a 640px column above that. A sticky glass top bar (52px plus safe area) sits above the content, and a floating glass capsule tab bar (64px, 12px from the sides, 10px from the bottom, capped at 560px from 700px up) sits below. Pages open with a sky scene rounded like a widget (30px radius), and the next card overlaps its bottom edge by 20 to 26px, so the sheet appears to rest on the horizon. Cards stack with a 12px gap; card padding is 20px; chips gap 6 to 8px.
+The phone app is designed at 375px and centers in a 640px column above that. A sticky glass top bar (52px plus safe area) sits above the content, and a floating glass capsule tab bar (64px, 12px from the sides, 10px from the bottom, capped at 560px from 700px up) sits below. Pages open with a sky scene rounded like a widget (30px radius), and the next card overlaps its bottom edge by 20 to 26px, so the sheet appears to rest on the horizon. Cards stack with a 12px gap; card padding is 20px; chips gap 6 to 8px.
 
 The projector is a full-viewport 16:9 stage with 2.6vh / 3.4vw padding, body size clamp(16px, 1.3vw, 30px), and every measure in vw, vh or em so it scales from a laptop to a wall. The QR card stays pinned bottom-right; the five-jobs strip runs along the bottom, clear of it.
 
@@ -348,11 +348,11 @@ Pills that press on pointer-down.
 - **Shape:** full pill (999px), 48px tall, 20px side padding, 600 weight at 17px.
 - **Primary:** safety-orange steel (lit to shade gradient, faint 6px ribs, white inner crown, steel cast) with near-black ink at 700. One per view.
 - **Hover / Focus:** scale to 0.97 on press (160ms ease-out); primary brightens slightly on hover and dims to 0.96 on press. Focus is a 3px blue ring at 70% with a 2px offset.
-- **Secondary / Dark / Ghost:** grey surface-3 pill with a lit inner edge; a dark text-colour pill for strong neutral actions; a transparent blue-text ghost that gains a blue wash on hover. Small variant is 36px.
+- **Secondary / Dark / Ghost:** grey surface-3 pill with a lit inner edge; a dark text-color pill for strong neutral actions; a transparent blue-text ghost that gains a blue wash on hover. Small variant is 36px.
 
 ### Chips
 - **Style:** white pill, 44px, 1px line-strong border, cast 1, 600 at 15px. Table chips lead with a small painted container swatch (18 by 12px, ribbed, lit on its crown).
-- **State:** selected chips turn dark (text fill, ground-colour ink).
+- **State:** selected chips turn dark (text fill, ground-color ink).
 
 ### Cards / Containers
 - **Corner Style:** 22px.
@@ -368,7 +368,7 @@ Pills that press on pointer-down.
 - **Error / Disabled:** disabled buttons drop to 38% opacity.
 
 ### Navigation
-- **Top bar:** sticky glass, 52px, logo mark in orange, centred 17px 600 title, a points chip in the orange wash.
+- **Top bar:** sticky glass, 52px, logo mark in orange, centered 17px 600 title, a points chip in the orange wash.
 - **Tab bar:** a floating glass capsule of four tabs (Live, Route, Toolkit, Manifest), 11px 600 labels under icons. Active tab takes rust ink on a 12% orange wash; an orange pip marks news.
 - **Host:** the same glass bar; the agenda selects a row by raising it to a white surface with cast 1.
 
@@ -376,7 +376,7 @@ Pills that press on pointer-down.
 Painted container doors: the port paint with 11px ribs, a lit crown, a shaded sill and a cast tinted from the paint itself. 22px radius, 120px tall on the phone, 700 at 19px with a 24px shape glyph (SVG). Press scales to 0.96. The picked tile gets a double ring (ground, then text); the others fade to 28% and desaturate after answering.
 
 ### Route Map
-The shipment's path down the Route tab. Each leg is a numbered container stop (46 by 30px, 4px radius): steel once started, locked steel before. Travelled segments are 3px solid orange and draw in leg by leg; the road ahead is 2px dashed line-strong. A completed stop carries a small green check badge. On the join screen the same route is a horizontal SVG with one live orange node that pings.
+The shipment's path down the Route tab. Each leg is a numbered container stop (46 by 30px, 4px radius): steel once started, locked steel before. Traveled segments are 3px solid orange and draw in leg by leg; the road ahead is 2px dashed line-strong. A completed stop carries a small green check badge. On the join screen the same route is a horizontal SVG with one live orange node that pings.
 
 ### Rank Card
 A stack of six container boxes, one per rank (Deckhand, Tally Clerk, Shipping Clerk, Planner, Dispatcher, Logistics Lead), earned boxes in steel and the rest locked, settling in one by one. Beside it the rank name (title), XP and distance to the next rank, and a steel XP bar.
@@ -394,15 +394,15 @@ The Live tab opens with a sky scene holding "Good to see you, <first name>." as 
 - **Do** paint anything tappable or earned as orange steel: lit-to-shade gradient, vertical ribs, warm steel cast.
 - **Do** show locked progress as the same object desaturated (locked-lit to locked-shade), never greyed-out flat or broken.
 - **Do** put the participant's own work on white label stock with a 2.5px black rule, in both themes.
-- **Do** pair every answer colour with its shape (triangle, diamond, circle, square).
+- **Do** pair every answer color with its shape (triangle, diamond, circle, square).
 - **Do** use rust ink (brand-text) for orange type on light, and tabular numerals for every number that changes.
 - **Do** build dark mode by swapping the scene to night (moon, crane lamps, black casts), not by inverting.
 - **Do** clear the projector sky when a question or board is up.
 
 ### Don't:
 - **Don't** use safety orange (steel-body) as text on a light ground; it fails contrast. Use brand-text.
-- **Don't** introduce a second brand hue, candy-bright answer colours, or a dark neon look.
+- **Don't** introduce a second brand hue, candy-bright answer colors, or a dark neon look.
 - **Don't** use zero-blur offset shadows or shadows cast up or to the left.
 - **Don't** theme label stock or the answer paints for dark mode.
-- **Don't** set type in uppercase outside mono label data and the room code, and don't put a small label above a headline as a kicker.
+- **Don't** set type in uppercase outside mono label data, the room code and the lab-type tags, and don't put a small label above a headline as a kicker.
 - **Don't** fall back to a bare system font stack without Inter loaded; every page head loads Inter and JetBrains Mono.

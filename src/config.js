@@ -40,7 +40,7 @@ MF.DEFAULT_ROOM = 'PTY14';
 
 /* Where participants land when they scan the projector QR code.
    Leave empty to use the address the projector page is served from. */
-MF.PUBLIC_URL = '';
+MF.PUBLIC_URL = 'http://173.212.225.199:8100/';
 
 /* 'auto' picks supabase when both values above are set, otherwise local.
    ?driver=local or ?driver=supabase in the address bar overrides it. */

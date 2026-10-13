@@ -123,3 +123,52 @@ table.ppl{width:100%;border-collapse:collapse;font-size:14px}
 .hconv .quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .hconv .quick .chip{min-height:30px;font-size:12.5px}
 @media (max-width:1060px){.hchat{grid-template-columns:1fr}.ppl-sum{grid-template-columns:repeat(2,1fr)}}
+
+/* ── one page to run the session alone ── */
+.flow blockquote{font-size:18px;line-height:1.5}
+.flow .move{font-weight:500}
+/* projector cues: what the room should be looking at from this step on */
+.cues{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 10px}
+.cue{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 11px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:-.005em;white-space:nowrap}
+.cue-slide{background:var(--accent-soft);color:var(--accent-text)}
+.cue-app{background:var(--brand-soft);color:var(--brand-text)}
+.cue-laptop{background:var(--surface-3);color:var(--text)}
+.cue-off{background:var(--text);color:var(--bg)}
+.cue-arrow{display:inline-grid;color:var(--text-3)}
+.next-seg{margin-top:24px}
+/* launch status, on script buttons and bank rows alike */
+.st{display:inline-flex;align-items:center;gap:3px;margin-left:8px;height:18px;padding:0 7px;border-radius:9px;font-size:11px;font-weight:700;font-style:normal;white-space:nowrap;flex:none}
+.st-live{background:var(--steel-body);color:var(--steel-ink)}
+.st-done{background:var(--positive-soft);color:var(--positive)}
+.st-revealed,.st-locked,.st-part{background:var(--surface-3);color:var(--text-2)}
+.bank{align-items:center}
+.bank>span:not(.st){flex:1;min-width:0}
+/* the activities card: this segment by type, then the whole bank, then ask the room */
+.h-acts{padding:16px}
+.acts-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+.acts-head h3{font-size:17px;letter-spacing:-.02em}
+.acat{margin-top:12px}
+.acat .eyebrow{margin:0 2px 2px}
+.allacts,.askroom{margin-top:14px;padding-top:12px;border-top:.5px solid var(--line-strong)}
+.allacts>summary,.askroom>summary{font-size:14px;list-style-position:inside}
+.askroom form{margin-top:10px}
+/* who needs you, at the top of the room card */
+.needs{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:10px 12px;border-radius:12px;background:var(--brand-soft)}
+.needs>.ic{color:var(--brand-text)}
+.needs>span{flex:1;font-size:13.5px;line-height:1.35}
+/* the live card stays compact, so the activities sit on the same screen */
+.h-controls{padding:14px}
+.h-controls .btn.small{min-height:32px;padding:0 11px;font-size:13.5px;gap:6px}
+.ctl-modes{gap:5px}
+.ctl-act{margin-top:12px;padding-top:12px}
+.ctl-act .row{flex-wrap:wrap;row-gap:6px}
+.ctl-act .row .mono{white-space:nowrap}
+.ctl-act h3{font-size:16px;margin:8px 0 10px}
+.preview{margin-top:10px;max-height:200px}
+.h-controls .bars{gap:6px}
+.h-controls .bar{gap:8px}
+.h-controls .bar .track{height:14px;border-radius:5px}
+.h-controls .bar .fill{border-radius:5px}
+.h-controls .bar .opt-text{font-size:12.5px;margin-top:-3px}
+.h-controls .bar .n{font-size:14px}
+.ctl-timer{margin-top:12px;padding-top:12px}

@@ -1,10 +1,14 @@
 /* MANIFEST · host console. The only page that writes room state.
-   Built for a laptop beside the lectern: agenda on the left, the segment's
-   script and live controls in the middle, the room on the right. */
+   Built for one trainer running the room alone, on a laptop beside the
+   lectern. One page does the session: the agenda on the left, the script in
+   the middle (with a projector cue on every step that changes the screen),
+   and on the right the live controls, this segment's activities grouped by
+   type, the whole bank, and the room. People and Help chat are the two
+   other tabs. */
 (function (MF) {
 'use strict';
 var $ = MF.$, $$ = MF.$$, esc = MF.esc, Live = MF.Live;
-var responses = [], posts = [], selSeg = '', autoT = null, view = { tab: 'script', pid: '', draft: '' };
+var responses = [], posts = [], selSeg = '', autoT = null, view = { tab: 'run', pid: '', draft: '', openAll: false, openAsk: false };
 var progress = {}, inbox = [], lastMsgId = 0, inboxBoot = false;
 
 /* ── helpers ── */
@@ -161,27 +165,62 @@ function agendaHtml() {
   return html;
 }
 
+/* What the projector should show. Canva slides, the Manifest screen, or your laptop. */
+function cueHtml(sl) {
+  return '<div class="cues">' + [].concat(sl).map(function (c, i) {
+    c = String(c);
+    var kind = /^\d/.test(c) ? 'slide' : c === 'app' ? 'app' : c === 'laptop' ? 'laptop' : 'off';
+    var ic = { slide: 'i-slides', app: 'i-screen', laptop: 'i-external', off: 'i-eye-off' }[kind];
+    return (i ? '<span class="cue-arrow">' + MF.icon('i-right', 12) + '</span>' : '') + '<span class="cue cue-' + kind + '">' + MF.icon(ic, 13) + esc(MF.cueLabel ? MF.cueLabel([c]) : c) + '</span>';
+  }).join('') + '</div>';
+}
+/* Has this activity or game run yet? Shown on every launch button, so you never lose your place. */
+function actStatus(id) {
+  var a = st().act;
+  if (a && a.id === id && st().mode === 'activity') return a.phase === 'reveal' ? 'revealed' : a.phase === 'locked' ? 'locked' : 'live';
+  if ((st().scored || {})[id] || responses.some(function (r) { return r.activity === id; }) || posts.some(function (p) { return p.board === id; })) return 'done';
+  return '';
+}
+function gameStatus(gid) {
+  var g = (MF.GAMES || {})[gid], a = st().act; if (!g) return '';
+  if (a && a.gameId === gid && st().mode !== 'podium') return 'live';
+  var n = g.items.filter(function (id) { return actStatus(id); }).length;
+  return n >= g.items.length ? 'done' : n ? n + '/' + g.items.length : '';
+}
+function statusPill(stt) {
+  if (!stt) return '';
+  var label = { live: 'Live', locked: 'Locked', revealed: 'Revealed', done: 'Done' }[stt] || stt;
+  return '<span class="st st-' + (/\//.test(stt) ? 'part' : stt) + '">' + (stt === 'done' ? MF.icon('i-check', 11, 3) : '') + label + '</span>';
+}
+function nextSeg(id) {
+  var A = MF.AGENDA || [], i = A.map(function (x) { return x.id; }).indexOf(id);
+  return i >= 0 && i + 1 < A.length ? A[i + 1] : null;
+}
 function scriptHtml(s) {
   if (!s) return '<p class="faint">Pick a segment on the left.</p>';
   var h = '<div class="seg-head"><h2>' + esc(s.title) + '</h2><div class="headmeta">' + esc(s.start + ' to ' + s.end) + (s.mods ? ' · Module ' + esc(s.mods) : '') + (s.leg ? ' · Leg ' + s.leg : '') + '</div>' +
     (s.goal ? '<p class="goal">' + MF.md(s.goal) + '</p>' : '') + '</div>';
-  if (s.slides && s.slides.length) h += '<div class="slides-ref">' + MF.icon('i-slides', 16) + ' Slides ' + esc(s.slides.join(', ')) + '</div>';
+  if (s.slides && s.slides.length) h += '<div class="slides-ref">' + MF.icon('i-slides', 16) + ' Canva slides in this segment: ' + esc(s.slides.join(', ')) + '</div>';
   (s.flow || []).forEach(function (f) {
+    var as = f.act ? actStatus(f.act) : '', gs = f.game ? gameStatus(f.game) : '';
     h += '<div class="flow ' + (f.say ? 'say' : f.do ? 'do' : 'note') + '"><span class="mm">' + esc(f.m || '') + '</span><div>' +
+      (f.sl ? cueHtml(f.sl) : '') +
       (f.say ? '<blockquote>' + MF.md(f.say) + '</blockquote>' : '') +
-      (f.do ? '<p>' + MF.md(f.do) + '</p>' : '') +
+      (f.do ? '<p class="move">' + MF.md(f.do) + '</p>' : '') +
       (f.note ? '<p class="faint">' + MF.md(f.note) + '</p>' : '') +
-      (f.act ? '<button class="btn small primary" data-launch="' + esc(f.act) + '">' + MF.icon('i-play', 14) + 'Launch: ' + esc((def(f.act) || {}).q || f.act).slice(0, 60) + '</button>' : '') +
-      (f.game ? '<button class="btn small primary" data-game="' + esc(f.game) + '">' + MF.icon('i-play', 14) + 'Start game: ' + esc(((MF.GAMES || {})[f.game] || {}).title || f.game) + '</button>' : '') +
+      (f.act ? '<button class="btn small' + (as ? '' : ' primary') + '" data-launch="' + esc(f.act) + '">' + MF.icon('i-play', 14) + (as ? 'Run again: ' : 'Launch: ') + esc((def(f.act) || {}).q || f.act).slice(0, 60) + statusPill(as) + '</button>' : '') +
+      (f.game ? '<button class="btn small' + (gs ? '' : ' primary') + '" data-game="' + esc(f.game) + '">' + MF.icon('i-play', 14) + (gs ? 'Restart game: ' : 'Start game: ') + esc(((MF.GAMES || {})[f.game] || {}).title || f.game) + statusPill(gs) + '</button>' : '') +
       (f.timer ? '<button class="btn small" data-timer="' + f.timer + '">' + MF.icon('i-timer', 14) + f.timer + ' min timer</button>' : '') +
       '</div></div>';
   });
+  var nx = nextSeg(s.id);
   if (s.risks && s.risks.length) {
     h += '<details class="risks"><summary>What can go wrong (' + s.risks.length + ')</summary>' + s.risks.map(function (r) {
       return '<div class="risk"><b>' + MF.md(r[0]) + '</b><p>' + MF.md(r[1]) + '</p></div>';
     }).join('') + '</details>';
   }
   if (s.key) h += '<details class="key"><summary>Trainer-only answer key</summary><div>' + MF.md(s.key).replace(/\n/g, '<br>') + '</div></details>';
+  if (nx) h += '<button class="btn primary next-seg" data-seg="' + nx.id + '">Next: ' + esc(nx.start) + ' · ' + esc(nx.title) + MF.icon('i-right', 16) + '</button>';
   return h;
 }
 
@@ -222,7 +261,15 @@ function roomHtml() {
   var people = Object.keys(Live.people).map(function (k) { return Live.people[k]; });
   var teams = Live.teamTotals(st().totals, Live.people);
   var tot = st().totals || {}, act = activeSet();
-  var h = '<div class="room-head"><b>' + people.length + '</b> joined · <b>' + Object.keys(activeSet()).length + '</b> active</div>';
+  var stuck = Object.keys(progress).filter(function (k) { return progress[k].help; }), unread = unreadCount();
+  var h = '';
+  if (stuck.length || unread) {
+    h += '<div class="needs">' + MF.icon('i-hand', 16) + '<span>' +
+      (stuck.length ? '<b>' + stuck.map(function (pid) { var p = Live.people[pid]; return esc(p ? p.name : 'Someone'); }).slice(0, 3).join(', ') + (stuck.length > 3 ? ' +' + (stuck.length - 3) : '') + '</b> ' + (stuck.length === 1 ? 'is' : 'are') + ' stuck' : '') +
+      (stuck.length && unread ? ' · ' : '') + (unread ? '<b>' + unread + '</b> unread message' + (unread === 1 ? '' : 's') : '') + '</span>' +
+      '<button class="btn small" data-tab="' + (unread ? 'help' : 'people') + '">Open</button></div>';
+  }
+  h += '<div class="room-head"><b>' + people.length + '</b> joined · <b>' + Object.keys(activeSet()).length + '</b> active</div>';
   h += '<div class="eyebrow">Tables</div><div class="teams">' + MF.TEAMS.map(function (t) {
     var tt = teams.filter(function (x) { return x.id === t.id; })[0];
     var n = people.filter(function (p) { return p.team === t.id; }).length;
@@ -237,20 +284,50 @@ function roomHtml() {
   return h;
 }
 
-function bankHtml() {
-  var all = MF.ACTIVITIES || {}, games = MF.GAMES || {};
-  var h = '<div class="eyebrow">Games</div>' + Object.keys(games).map(function (g) {
-    return '<button class="bank" data-game="' + g + '">' + MF.icon('i-trophy', 15) + '<span>' + esc(games[g].title) + ' <i class="faint">' + games[g].items.length + ' Qs</i></span></button>';
+var CATS = [
+  { k: 'game', t: 'Games' },
+  { k: 'answer', t: 'Questions with a right answer', kinds: ['quiz', 'number', 'rank'] },
+  { k: 'opinion', t: 'Polls and scales', kinds: ['poll', 'scale'] },
+  { k: 'board', t: 'Walls and word clouds', kinds: ['wall', 'cloud'] }
+];
+function catOf(kind) { for (var i = 1; i < CATS.length; i++) if (CATS[i].kinds.indexOf(kind) >= 0) return CATS[i].k; return 'answer'; }
+/* actId or gameId → the first segment that uses it, so the bank says when each one is meant to run */
+function usedAt() {
+  var m = {};
+  (MF.AGENDA || []).forEach(function (sg) { ((MF.SCRIPT || {})[sg.id] || {}).flow && MF.SCRIPT[sg.id].flow.forEach(function (f) { var k = f.act || f.game; if (k && !m[k]) m[k] = sg.start; }); });
+  return m;
+}
+function actRow(id, isGame, when) {
+  if (isGame) {
+    var g = (MF.GAMES || {})[id]; if (!g) return '';
+    return '<button class="bank" data-game="' + id + '">' + MF.icon('i-trophy', 15) + '<span>' + esc(g.title) + ' <i class="faint">' + g.items.length + ' questions' + (when ? ' · ' + when : '') + '</i></span>' + statusPill(gameStatus(id)) + '</button>';
+  }
+  var d = def(id); if (!d) return '';
+  return '<button class="bank" data-launch="' + id + '">' + MF.icon(MF.R.kindIcon(d.kind), 15) + '<span>' + esc(d.q) + ' <i class="faint">' + MF.R.kindLabel(d.kind) + (when ? ' · ' + when : '') + '</i></span>' + statusPill(actStatus(id)) + '</button>';
+}
+function groupRows(items, when) {
+  return CATS.map(function (c) {
+    var rows = items.filter(function (x) { return x.game ? c.k === 'game' : c.k === catOf((def(x.id) || {}).kind); });
+    if (!rows.length) return '';
+    return '<div class="acat"><div class="eyebrow">' + c.t + ' <span class="faint">' + rows.length + '</span></div>' + rows.map(function (x) { return actRow(x.id, x.game, when ? when[x.id] : ''); }).join('') + '</div>';
   }).join('');
-  h += '<div class="eyebrow" style="margin-top:12px">All activities</div>' + Object.keys(all).filter(function (k) { return k.indexOf('adhoc-') !== 0; }).map(function (k) {
-    var d = all[k];
-    return '<button class="bank" data-launch="' + k + '">' + MF.icon(MF.R.kindIcon(d.kind), 15) + '<span>' + esc(d.q) + ' <i class="faint">' + MF.R.kindLabel(d.kind) + '</i></span></button>';
-  }).join('');
+}
+function actsHtml(s) {
+  var mine = [], seen = {};
+  ((s && s.flow) || []).forEach(function (f) {
+    if (f.game && !seen[f.game]) { seen[f.game] = 1; mine.push({ id: f.game, game: true }); }
+    if (f.act && !seen[f.act]) { seen[f.act] = 1; mine.push({ id: f.act, game: false }); }
+  });
+  var h = '<div class="acts-head"><h3>Activities' + (s ? ' · ' + esc(s.start) : '') + '</h3><span class="faint small">' + (mine.length ? mine.length + ' in this segment' : 'None in this segment') + '</span></div>';
+  h += mine.length ? groupRows(mine) : '<p class="faint small">This segment has no activities. Use the bank or ask the room.</p>';
+  var all = Object.keys(MF.ACTIVITIES || {}).filter(function (k) { return k.indexOf('adhoc-') !== 0; }).map(function (k) { return { id: k, game: false }; });
+  var games = Object.keys(MF.GAMES || {}).map(function (k) { return { id: k, game: true }; });
+  h += '<details class="allacts" id="allActs"' + (view.openAll ? ' open' : '') + '><summary>All activities <span class="faint">' + (all.length + games.length) + '</span></summary>' + groupRows(games.concat(all), usedAt()) + '</details>';
+  h += '<details class="askroom" id="askRoom"' + (view.openAsk ? ' open' : '') + '><summary>Ask the room something new</summary>' + askHtml() + '</details>';
   return h;
 }
-
 function askHtml() {
-  return '<form id="ask" class="stack"><div class="eyebrow">Ask the room, right now</div>' +
+  return '<form id="ask" class="stack">' +
     '<input class="input" name="q" maxlength="140" placeholder="Your question" required>' +
     '<div class="chips" role="radiogroup">' + ['poll', 'cloud', 'wall', 'scale'].map(function (k, i) {
       return '<label class="chip"><input type="radio" name="kind" value="' + k + '"' + (i === 0 ? ' checked' : '') + '> ' + MF.R.kindLabel(k) + '</label>';
@@ -345,12 +422,14 @@ function render() {
   var s = seg(selSeg);
   $('#agenda').innerHTML = agendaHtml();
   var stuckN = Object.keys(progress).filter(function (k) { return progress[k].help; }).length, unreadN = unreadCount();
-  $('#tabs').innerHTML = ['script', 'bank', 'ask', 'people', 'help'].map(function (t) {
+  $('#tabs').innerHTML = ['run', 'people', 'help'].map(function (t) {
     var badge = t === 'people' && stuckN ? '<i class="tbadge">' + stuckN + '</i>' : t === 'help' && unreadN ? '<i class="tbadge">' + unreadN + '</i>' : '';
-    return '<button class="tab' + (view.tab === t ? ' on' : '') + '" data-tab="' + t + '">' + { script: 'Script', bank: 'Activity bank', ask: 'Ask the room', people: 'People', help: 'Help chat' }[t] + badge + '</button>';
+    return '<button class="tab' + (view.tab === t ? ' on' : '') + '" data-tab="' + t + '">' + { run: 'Run the session', people: 'People', help: 'Help chat' }[t] + badge + '</button>';
   }).join('');
   var typing = document.activeElement && document.activeElement.id === 'replyBox';
-  if (!typing) $('#mid').innerHTML = view.tab === 'script' ? scriptHtml(s) : view.tab === 'bank' ? bankHtml() : view.tab === 'ask' ? askHtml() : view.tab === 'people' ? peopleHtml() : helpHtml();
+  if (!typing) $('#mid').innerHTML = view.tab === 'people' ? peopleHtml() : view.tab === 'help' ? helpHtml() : scriptHtml(s);
+  var asking = document.activeElement && document.activeElement.closest && document.activeElement.closest('#ask');
+  if (!asking) $('#acts').innerHTML = actsHtml(s);
   if (view.tab === 'help' && !typing) { var th = $('#hthread'); if (th) th.scrollTop = th.scrollHeight; }
   $('#controls').innerHTML = controlsHtml();
   $('#room').innerHTML = roomHtml();
@@ -400,6 +479,10 @@ function wire() {
     }
   });
   document.addEventListener('input', function (e) { if (e.target.id === 'replyBox') view.draft = e.target.value; });
+  document.addEventListener('toggle', function (e) {
+    if (e.target.id === 'allActs') view.openAll = e.target.open;
+    if (e.target.id === 'askRoom') view.openAsk = e.target.open;
+  }, true);
   document.addEventListener('keydown', function (e) {
     if (e.target.id === 'replyBox' && e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); $('#hreply').requestSubmit(); }
   });

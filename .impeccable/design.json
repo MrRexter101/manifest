@@ -1,0 +1,1045 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T00:00:00+07:00",
+  "title": "Design System: Manifest",
+  "extensions": {
+    "colorMeta": {
+      "steel-body": {
+        "role": "primary",
+        "displayName": "Safety Orange Steel",
+        "canonical": "#FF6A00",
+        "tonalRamp": [
+          "#9A3D00",
+          "#B84A00",
+          "#E05A00",
+          "#FF6A00",
+          "#FF8A3D",
+          "#FFB27A",
+          "#FFF1E6",
+          "#FFF8F2"
+        ]
+      },
+      "steel-lit": {
+        "role": "primary",
+        "displayName": "Steel Crown",
+        "canonical": "#FF8D45",
+        "tonalRamp": [
+          "#9A3D00",
+          "#B84A00",
+          "#E05A00",
+          "#FF6A00",
+          "#FF8A3D",
+          "#FFB27A",
+          "#FFF1E6",
+          "#FFF8F2"
+        ]
+      },
+      "steel-shade": {
+        "role": "primary",
+        "displayName": "Steel Belly",
+        "canonical": "#D35400",
+        "tonalRamp": [
+          "#9A3D00",
+          "#B84A00",
+          "#E05A00",
+          "#FF6A00",
+          "#FF8A3D",
+          "#FFB27A",
+          "#FFF1E6",
+          "#FFF8F2"
+        ]
+      },
+      "brand-text": {
+        "role": "primary",
+        "displayName": "Rust Ink",
+        "canonical": "#B84A00",
+        "tonalRamp": [
+          "#9A3D00",
+          "#B84A00",
+          "#E05A00",
+          "#FF6A00",
+          "#FF8A3D",
+          "#FFB27A",
+          "#FFF1E6",
+          "#FFF8F2"
+        ]
+      },
+      "brand-soft": {
+        "role": "primary",
+        "displayName": "Orange Wash",
+        "canonical": "#FFF1E6",
+        "tonalRamp": [
+          "#9A3D00",
+          "#B84A00",
+          "#E05A00",
+          "#FF6A00",
+          "#FF8A3D",
+          "#FFB27A",
+          "#FFF1E6",
+          "#FFF8F2"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Information Blue",
+        "canonical": "#0071E3",
+        "tonalRamp": [
+          "oklch(15% 0.115 256)",
+          "oklch(26% 0.135 256)",
+          "oklch(38% 0.155 256)",
+          "oklch(49% 0.175 256)",
+          "oklch(61% 0.192 256)",
+          "oklch(72% 0.172 256)",
+          "oklch(84% 0.152 256)",
+          "oklch(95% 0.132 256)"
+        ]
+      },
+      "accent-text": {
+        "role": "secondary",
+        "displayName": "Information Blue Ink",
+        "canonical": "#0066CC",
+        "tonalRamp": [
+          "oklch(15% 0.105 256)",
+          "oklch(26% 0.124 256)",
+          "oklch(38% 0.142 256)",
+          "oklch(49% 0.160 256)",
+          "oklch(61% 0.176 256)",
+          "oklch(72% 0.158 256)",
+          "oklch(84% 0.140 256)",
+          "oklch(95% 0.121 256)"
+        ]
+      },
+      "accent-soft": {
+        "role": "secondary",
+        "displayName": "Information Wash",
+        "canonical": "#E8F1FC",
+        "tonalRamp": [
+          "oklch(15% 0.011 253)",
+          "oklch(26% 0.012 253)",
+          "oklch(38% 0.014 253)",
+          "oklch(49% 0.016 253)",
+          "oklch(61% 0.018 253)",
+          "oklch(72% 0.016 253)",
+          "oklch(84% 0.014 253)",
+          "oklch(95% 0.012 253)"
+        ]
+      },
+      "sky-far": {
+        "role": "neutral",
+        "displayName": "Sea Haze",
+        "canonical": "#7FA6CC",
+        "tonalRamp": [
+          "oklch(15% 0.042 248)",
+          "oklch(26% 0.049 248)",
+          "oklch(38% 0.056 248)",
+          "oklch(49% 0.063 248)",
+          "oklch(61% 0.070 248)",
+          "oklch(72% 0.063 248)",
+          "oklch(84% 0.055 248)",
+          "oklch(95% 0.048 248)"
+        ]
+      },
+      "sky-air": {
+        "role": "neutral",
+        "displayName": "Morning Air",
+        "canonical": "#BFD3E6",
+        "tonalRamp": [
+          "oklch(15% 0.020 247)",
+          "oklch(26% 0.024 247)",
+          "oklch(38% 0.027 247)",
+          "oklch(49% 0.031 247)",
+          "oklch(61% 0.034 247)",
+          "oklch(72% 0.030 247)",
+          "oklch(84% 0.027 247)",
+          "oklch(95% 0.023 247)"
+        ]
+      },
+      "sky-haze": {
+        "role": "neutral",
+        "displayName": "Haze",
+        "canonical": "#E6EEF4",
+        "tonalRamp": [
+          "oklch(15% 0.007 240)",
+          "oklch(26% 0.008 240)",
+          "oklch(38% 0.009 240)",
+          "oklch(49% 0.011 240)",
+          "oklch(61% 0.012 240)",
+          "oklch(72% 0.011 240)",
+          "oklch(84% 0.009 240)",
+          "oklch(95% 0.008 240)"
+        ]
+      },
+      "sky-near": {
+        "role": "neutral",
+        "displayName": "Sand Horizon",
+        "canonical": "#F7EBDD",
+        "tonalRamp": [
+          "oklch(15% 0.014 72)",
+          "oklch(26% 0.016 72)",
+          "oklch(38% 0.018 72)",
+          "oklch(49% 0.021 72)",
+          "oklch(61% 0.023 72)",
+          "oklch(72% 0.020 72)",
+          "oklch(84% 0.018 72)",
+          "oklch(95% 0.016 72)"
+        ]
+      },
+      "night-far": {
+        "role": "neutral",
+        "displayName": "Night Sky High",
+        "canonical": "#050A14",
+        "tonalRamp": [
+          "oklch(15% 0.014 260)",
+          "oklch(26% 0.017 260)",
+          "oklch(38% 0.019 260)",
+          "oklch(49% 0.022 260)",
+          "oklch(61% 0.024 260)",
+          "oklch(72% 0.021 260)",
+          "oklch(84% 0.019 260)",
+          "oklch(95% 0.016 260)"
+        ]
+      },
+      "night-air": {
+        "role": "neutral",
+        "displayName": "Night Air",
+        "canonical": "#0B1526",
+        "tonalRamp": [
+          "oklch(15% 0.022 261)",
+          "oklch(26% 0.026 261)",
+          "oklch(38% 0.030 261)",
+          "oklch(49% 0.034 261)",
+          "oklch(61% 0.037 261)",
+          "oklch(72% 0.033 261)",
+          "oklch(84% 0.030 261)",
+          "oklch(95% 0.026 261)"
+        ]
+      },
+      "night-haze": {
+        "role": "neutral",
+        "displayName": "Night Haze",
+        "canonical": "#15223A",
+        "tonalRamp": [
+          "oklch(15% 0.029 262)",
+          "oklch(26% 0.034 262)",
+          "oklch(38% 0.039 262)",
+          "oklch(49% 0.044 262)",
+          "oklch(61% 0.049 262)",
+          "oklch(72% 0.044 262)",
+          "oklch(84% 0.039 262)",
+          "oklch(95% 0.034 262)"
+        ]
+      },
+      "night-near": {
+        "role": "neutral",
+        "displayName": "Lamp-Warm Horizon",
+        "canonical": "#2E2620",
+        "tonalRamp": [
+          "oklch(15% 0.010 59)",
+          "oklch(26% 0.011 59)",
+          "oklch(38% 0.013 59)",
+          "oklch(49% 0.015 59)",
+          "oklch(61% 0.016 59)",
+          "oklch(72% 0.014 59)",
+          "oklch(84% 0.013 59)",
+          "oklch(95% 0.011 59)"
+        ]
+      },
+      "horizon-far": {
+        "role": "neutral",
+        "displayName": "Far Skyline",
+        "canonical": "#B6CADC",
+        "tonalRamp": [
+          "oklch(15% 0.020 245)",
+          "oklch(26% 0.023 245)",
+          "oklch(38% 0.027 245)",
+          "oklch(49% 0.030 245)",
+          "oklch(61% 0.033 245)",
+          "oklch(72% 0.030 245)",
+          "oklch(84% 0.026 245)",
+          "oklch(95% 0.023 245)"
+        ]
+      },
+      "horizon-mid": {
+        "role": "neutral",
+        "displayName": "Mid Skyline",
+        "canonical": "#93ADC6",
+        "tonalRamp": [
+          "oklch(15% 0.028 247)",
+          "oklch(26% 0.032 247)",
+          "oklch(38% 0.037 247)",
+          "oklch(49% 0.042 247)",
+          "oklch(61% 0.046 247)",
+          "oklch(72% 0.041 247)",
+          "oklch(84% 0.037 247)",
+          "oklch(95% 0.032 247)"
+        ]
+      },
+      "horizon-near": {
+        "role": "neutral",
+        "displayName": "Near Skyline",
+        "canonical": "#7E98B3",
+        "tonalRamp": [
+          "oklch(15% 0.030 250)",
+          "oklch(26% 0.035 250)",
+          "oklch(38% 0.040 250)",
+          "oklch(49% 0.045 250)",
+          "oklch(61% 0.049 250)",
+          "oklch(72% 0.044 250)",
+          "oklch(84% 0.039 250)",
+          "oklch(95% 0.034 250)"
+        ]
+      },
+      "scene-ink": {
+        "role": "neutral",
+        "displayName": "Scene Ink",
+        "canonical": "#14202F",
+        "tonalRamp": [
+          "oklch(15% 0.020 254)",
+          "oklch(26% 0.023 254)",
+          "oklch(38% 0.027 254)",
+          "oklch(49% 0.030 254)",
+          "oklch(61% 0.033 254)",
+          "oklch(72% 0.030 254)",
+          "oklch(84% 0.026 254)",
+          "oklch(95% 0.023 254)"
+        ]
+      },
+      "scene-ink-2": {
+        "role": "neutral",
+        "displayName": "Scene Ink Secondary",
+        "canonical": "#2B3B52",
+        "tonalRamp": [
+          "oklch(15% 0.027 257)",
+          "oklch(26% 0.032 257)",
+          "oklch(38% 0.037 257)",
+          "oklch(49% 0.041 257)",
+          "oklch(61% 0.045 257)",
+          "oklch(72% 0.041 257)",
+          "oklch(84% 0.036 257)",
+          "oklch(95% 0.031 257)"
+        ]
+      },
+      "ground-top": {
+        "role": "neutral",
+        "displayName": "Cool Ground",
+        "canonical": "#E8EFF5",
+        "tonalRamp": [
+          "oklch(15% 0.007 244)",
+          "oklch(26% 0.008 244)",
+          "oklch(38% 0.009 244)",
+          "oklch(49% 0.010 244)",
+          "oklch(61% 0.011 244)",
+          "oklch(72% 0.010 244)",
+          "oklch(84% 0.009 244)",
+          "oklch(95% 0.008 244)"
+        ]
+      },
+      "ground-mid": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "#F1F2F1",
+        "tonalRamp": [
+          "oklch(15% 0.002 146)",
+          "oklch(26% 0.002 146)",
+          "oklch(38% 0.002 146)",
+          "oklch(49% 0.002 146)",
+          "oklch(61% 0.002 146)",
+          "oklch(72% 0.002 146)",
+          "oklch(84% 0.002 146)",
+          "oklch(95% 0.002 146)"
+        ]
+      },
+      "ground-bottom": {
+        "role": "neutral",
+        "displayName": "Warm Sand Ground",
+        "canonical": "#F7EEE3",
+        "tonalRamp": [
+          "oklch(15% 0.010 73)",
+          "oklch(26% 0.012 73)",
+          "oklch(38% 0.014 73)",
+          "oklch(49% 0.016 73)",
+          "oklch(61% 0.017 73)",
+          "oklch(72% 0.016 73)",
+          "oklch(84% 0.014 73)",
+          "oklch(95% 0.012 73)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Quiet Inset",
+        "canonical": "#F4F6F8",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "surface-3": {
+        "role": "neutral",
+        "displayName": "Fill Grey",
+        "canonical": "#E9EDF1",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Near-Black Ink",
+        "canonical": "#1D1D1F",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "canonical": "#3C4250",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Tertiary Ink",
+        "canonical": "#626977",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#E2E7EC",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Rim Line",
+        "canonical": "#CBD3DB",
+        "tonalRamp": [
+          "#1D1D1F",
+          "#3A3A3C",
+          "#646B78",
+          "#868C98",
+          "#AEB4BE",
+          "#CBD3DB",
+          "#E9EDF1",
+          "#F4F6F8"
+        ]
+      },
+      "locked-lit": {
+        "role": "neutral",
+        "displayName": "Locked Steel Crown",
+        "canonical": "#E8ECF1",
+        "tonalRamp": [
+          "oklch(15% 0.008 254)",
+          "oklch(26% 0.008 254)",
+          "oklch(38% 0.008 254)",
+          "oklch(49% 0.008 254)",
+          "oklch(61% 0.008 254)",
+          "oklch(72% 0.008 254)",
+          "oklch(84% 0.008 254)",
+          "oklch(95% 0.008 254)"
+        ]
+      },
+      "locked-body": {
+        "role": "neutral",
+        "displayName": "Locked Steel",
+        "canonical": "#CCD4DD",
+        "tonalRamp": [
+          "oklch(15% 0.009 251)",
+          "oklch(26% 0.011 251)",
+          "oklch(38% 0.012 251)",
+          "oklch(49% 0.014 251)",
+          "oklch(61% 0.015 251)",
+          "oklch(72% 0.014 251)",
+          "oklch(84% 0.012 251)",
+          "oklch(95% 0.010 251)"
+        ]
+      },
+      "locked-shade": {
+        "role": "neutral",
+        "displayName": "Locked Steel Belly",
+        "canonical": "#A8B2BE",
+        "tonalRamp": [
+          "oklch(15% 0.012 253)",
+          "oklch(26% 0.014 253)",
+          "oklch(38% 0.016 253)",
+          "oklch(49% 0.019 253)",
+          "oklch(61% 0.020 253)",
+          "oklch(72% 0.018 253)",
+          "oklch(84% 0.016 253)",
+          "oklch(95% 0.014 253)"
+        ]
+      },
+      "locked-ink": {
+        "role": "neutral",
+        "displayName": "Locked Ink",
+        "canonical": "#3F4654",
+        "tonalRamp": [
+          "oklch(15% 0.015 264)",
+          "oklch(26% 0.018 264)",
+          "oklch(38% 0.020 264)",
+          "oklch(49% 0.023 264)",
+          "oklch(61% 0.025 264)",
+          "oklch(72% 0.023 264)",
+          "oklch(84% 0.020 264)",
+          "oklch(95% 0.017 264)"
+        ]
+      },
+      "label-stock": {
+        "role": "neutral",
+        "displayName": "Label Stock",
+        "canonical": "#FFFEFB",
+        "tonalRamp": [
+          "oklch(15% 0.004 91)",
+          "oklch(26% 0.004 91)",
+          "oklch(38% 0.004 91)",
+          "oklch(49% 0.004 91)",
+          "oklch(61% 0.004 91)",
+          "oklch(72% 0.004 91)",
+          "oklch(84% 0.004 91)",
+          "oklch(95% 0.004 91)"
+        ]
+      },
+      "label-ink": {
+        "role": "neutral",
+        "displayName": "Label Ink",
+        "canonical": "#1D1D1F",
+        "tonalRamp": [
+          "oklch(15% 0.004 286)",
+          "oklch(26% 0.004 286)",
+          "oklch(38% 0.004 286)",
+          "oklch(49% 0.004 286)",
+          "oklch(61% 0.004 286)",
+          "oklch(72% 0.004 286)",
+          "oklch(84% 0.004 286)",
+          "oklch(95% 0.004 286)"
+        ]
+      },
+      "label-mute": {
+        "role": "neutral",
+        "displayName": "Label Mute",
+        "canonical": "#5E6470",
+        "tonalRamp": [
+          "oklch(15% 0.012 264)",
+          "oklch(26% 0.014 264)",
+          "oklch(38% 0.016 264)",
+          "oklch(49% 0.019 264)",
+          "oklch(61% 0.020 264)",
+          "oklch(72% 0.018 264)",
+          "oklch(84% 0.016 264)",
+          "oklch(95% 0.014 264)"
+        ]
+      },
+      "answer-rust": {
+        "role": "tertiary",
+        "displayName": "Rust Red Door",
+        "canonical": "#B8442E",
+        "tonalRamp": [
+          "oklch(15% 0.092 33)",
+          "oklch(26% 0.108 33)",
+          "oklch(38% 0.124 33)",
+          "oklch(49% 0.140 33)",
+          "oklch(61% 0.154 33)",
+          "oklch(72% 0.138 33)",
+          "oklch(84% 0.122 33)",
+          "oklch(95% 0.106 33)"
+        ]
+      },
+      "answer-steel-blue": {
+        "role": "tertiary",
+        "displayName": "Steel Blue Door",
+        "canonical": "#2F5F8A",
+        "tonalRamp": [
+          "oklch(15% 0.052 248)",
+          "oklch(26% 0.061 248)",
+          "oklch(38% 0.070 248)",
+          "oklch(49% 0.079 248)",
+          "oklch(61% 0.087 248)",
+          "oklch(72% 0.078 248)",
+          "oklch(84% 0.069 248)",
+          "oklch(95% 0.060 248)"
+        ]
+      },
+      "answer-mustard": {
+        "role": "tertiary",
+        "displayName": "Dry-Van Mustard Door",
+        "canonical": "#D4A62A",
+        "tonalRamp": [
+          "oklch(15% 0.084 87)",
+          "oklch(26% 0.099 87)",
+          "oklch(38% 0.113 87)",
+          "oklch(49% 0.128 87)",
+          "oklch(61% 0.140 87)",
+          "oklch(72% 0.126 87)",
+          "oklch(84% 0.111 87)",
+          "oklch(95% 0.097 87)"
+        ]
+      },
+      "answer-reefer": {
+        "role": "tertiary",
+        "displayName": "Reefer Green Door",
+        "canonical": "#2F7A5C",
+        "tonalRamp": [
+          "oklch(15% 0.053 164)",
+          "oklch(26% 0.062 164)",
+          "oklch(38% 0.071 164)",
+          "oklch(49% 0.080 164)",
+          "oklch(61% 0.088 164)",
+          "oklch(72% 0.079 164)",
+          "oklch(84% 0.070 164)",
+          "oklch(95% 0.061 164)"
+        ]
+      },
+      "positive": {
+        "role": "neutral",
+        "displayName": "Positive Ink",
+        "canonical": "#248A3D",
+        "tonalRamp": [
+          "oklch(15% 0.087 148)",
+          "oklch(26% 0.102 148)",
+          "oklch(38% 0.117 148)",
+          "oklch(49% 0.132 148)",
+          "oklch(61% 0.145 148)",
+          "oklch(72% 0.130 148)",
+          "oklch(84% 0.115 148)",
+          "oklch(95% 0.100 148)"
+        ]
+      },
+      "positive-fill": {
+        "role": "neutral",
+        "displayName": "Positive Fill",
+        "canonical": "#34C759",
+        "tonalRamp": [
+          "oklch(15% 0.116 147)",
+          "oklch(26% 0.136 147)",
+          "oklch(38% 0.156 147)",
+          "oklch(49% 0.176 147)",
+          "oklch(61% 0.193 147)",
+          "oklch(72% 0.173 147)",
+          "oklch(84% 0.153 147)",
+          "oklch(95% 0.133 147)"
+        ]
+      },
+      "positive-soft": {
+        "role": "neutral",
+        "displayName": "Positive Wash",
+        "canonical": "#E9F7EE",
+        "tonalRamp": [
+          "oklch(15% 0.011 158)",
+          "oklch(26% 0.013 158)",
+          "oklch(38% 0.015 158)",
+          "oklch(49% 0.017 158)",
+          "oklch(61% 0.019 158)",
+          "oklch(72% 0.017 158)",
+          "oklch(84% 0.015 158)",
+          "oklch(95% 0.013 158)"
+        ]
+      },
+      "negative": {
+        "role": "neutral",
+        "displayName": "Negative Ink",
+        "canonical": "#D70015",
+        "tonalRamp": [
+          "oklch(15% 0.134 27)",
+          "oklch(26% 0.157 27)",
+          "oklch(38% 0.181 27)",
+          "oklch(49% 0.204 27)",
+          "oklch(61% 0.224 27)",
+          "oklch(72% 0.201 27)",
+          "oklch(84% 0.178 27)",
+          "oklch(95% 0.154 27)"
+        ]
+      },
+      "negative-fill": {
+        "role": "neutral",
+        "displayName": "Negative Fill",
+        "canonical": "#FF3B30",
+        "tonalRamp": [
+          "oklch(15% 0.138 29)",
+          "oklch(26% 0.162 29)",
+          "oklch(38% 0.186 29)",
+          "oklch(49% 0.210 29)",
+          "oklch(61% 0.231 29)",
+          "oklch(72% 0.207 29)",
+          "oklch(84% 0.183 29)",
+          "oklch(95% 0.159 29)"
+        ]
+      },
+      "negative-soft": {
+        "role": "neutral",
+        "displayName": "Negative Wash",
+        "canonical": "#FDECEE",
+        "tonalRamp": [
+          "oklch(15% 0.011 9)",
+          "oklch(26% 0.013 9)",
+          "oklch(38% 0.015 9)",
+          "oklch(49% 0.017 9)",
+          "oklch(61% 0.019 9)",
+          "oklch(72% 0.017 9)",
+          "oklch(84% 0.015 9)",
+          "oklch(95% 0.013 9)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus Blue",
+        "canonical": "#0071E3",
+        "tonalRamp": [
+          "oklch(15% 0.115 256)",
+          "oklch(26% 0.135 256)",
+          "oklch(38% 0.155 256)",
+          "oklch(49% 0.175 256)",
+          "oklch(61% 0.192 256)",
+          "oklch(72% 0.172 256)",
+          "oklch(84% 0.152 256)",
+          "oklch(95% 0.132 256)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Join screen large title \"Manifest.\" on the phone."
+      },
+      "display-projector": {
+        "displayName": "Display Projector",
+        "purpose": "Projector stage and lobby titles, scaled to the wall."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Greeting, route head, label name."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "The live question on the phone."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heads, rank name, the now card."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One-paragraph intro under a page head."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Everything else."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Times, counts, secondary lines."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Names the content inside a card or panel. Never above a headline."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Agenda times, label-stock data, room codes."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cast-1",
+        "value": "1px 1px 2px rgba(31,49,77,.06), 1px 3px 8px -2px rgba(31,49,77,.07)",
+        "purpose": "Resting cards, chips, wall posts, selected host agenda row."
+      },
+      {
+        "name": "cast-2",
+        "value": "2px 4px 10px -3px rgba(31,49,77,.10), 8px 18px 38px -14px rgba(31,49,77,.20)",
+        "purpose": "Glass sheets, in-page scenes, label stock, verdict card."
+      },
+      {
+        "name": "cast-3",
+        "value": "4px 10px 24px -6px rgba(31,49,77,.16), 16px 36px 72px -22px rgba(31,49,77,.30)",
+        "purpose": "Tab bar, toast, projector QR, podium blocks, job strip."
+      },
+      {
+        "name": "steel-cast",
+        "value": "2px 6px 14px -5px rgba(178,72,0,.55)",
+        "purpose": "Warm shadow under orange steel."
+      },
+      {
+        "name": "bar-cast",
+        "value": "0 6px 18px -14px rgba(31,49,77,.35)",
+        "purpose": "Under sticky glass bars."
+      },
+      {
+        "name": "glass-material",
+        "value": "background: rgba(255,255,255,.66); backdrop-filter: saturate(180%) blur(22px); box-shadow: inset 0 0 0 .5px rgba(31,49,77,.10), cast-2; plus a 1px lit top lip",
+        "purpose": "Frosted chrome: bars, sheets, room code, job strip."
+      },
+      {
+        "name": "night casts",
+        "value": "same offsets, rgba(0,0,0,.5 to .7)",
+        "purpose": "Dark mode: the same port re-lit, casts go black."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.23,1,.32,1)",
+        "purpose": "Default for presses, reveals, bars."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(.77,0,.175,1)",
+        "purpose": "Two-way transitions."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(.32,.72,0,1)",
+        "purpose": "Sheets and drawers."
+      },
+      {
+        "name": "spring",
+        "value": "linear(0, .006, .025 2.8%, .101 6.1%, .539 18.9%, .721 25.3%, .849 31.5%, .937 38.1%, .968 41.8%, .991 45.7%, 1.006 50.1%, 1.015 55%, 1.017 63.9%, 1.001)",
+        "purpose": "Critically damped spring, Apple default feel without overshoot."
+      },
+      {
+        "name": "settle",
+        "value": "linear(0, .2 8%, .62 22%, .9 36%, 1.025 48%, 1.03 56%, 1.004 72%, 1)",
+        "purpose": "A crane setting a box down. Only for things that land: rank boxes, route stops, points, lobby names."
+      },
+      {
+        "name": "press",
+        "value": "scale(.94 to .97), 140 to 160ms ease-out",
+        "purpose": "Pointer-down feedback on buttons, chips, tiles."
+      },
+      {
+        "name": "sky-clear",
+        "value": "opacity .7s ease-out",
+        "purpose": "Projector sky fades out for activity and board modes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-column",
+        "value": "640px"
+      },
+      {
+        "name": "tabbar-cap",
+        "value": "700px"
+      },
+      {
+        "name": "host-full",
+        "value": "1280px"
+      },
+      {
+        "name": "host-two-pane",
+        "value": "1060px"
+      },
+      {
+        "name": "host-single",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (orange steel)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per view: a safety-orange steel pill.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Come aboard</button>",
+      "css": ".ds-btn{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;border:0;font-size:17px;font-weight:600;letter-spacing:-.011em;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),filter 200ms ease} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid rgba(0,113,227,.7);outline-offset:2px} .ds-btn-primary{background:repeating-linear-gradient(90deg,transparent 0 6px,rgba(0,0,0,.035) 6px 7px),linear-gradient(180deg,#FF8D45,#FF6A00 55%,#D35400);color:#1D1D1F;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -2px 0 rgba(0,0,0,.10),2px 6px 14px -5px rgba(178,72,0,.55);font-weight:700} .ds-btn-primary:hover{filter:brightness(1.04) saturate(1.05)} .ds-btn-primary:active{filter:brightness(.96)}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Grey fill pill with a lit inner edge for everyday actions.",
+      "html": "<button class=\"ds-btn-secondary\">Copy data</button>",
+      "css": ".ds-btn-secondary{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;border:0;background:#E9EDF1;color:#1D1D1F;font-size:17px;font-weight:600;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 0 0 .5px rgba(31,49,77,.10);cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 200ms ease} .ds-btn-secondary:hover{background:#DCE1E7} .ds-btn-secondary:active{transform:scale(.97)} .ds-btn-secondary:focus-visible{outline:3px solid rgba(0,113,227,.7);outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Transparent information-blue text action; gains a blue wash on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Skip the tour</button>",
+      "css": ".ds-btn-ghost{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;border:0;background:transparent;color:#0066CC;font-size:17px;font-weight:600;cursor:pointer;transition:background-color 200ms ease,transform 160ms ease} .ds-btn-ghost:hover{background:#E8F1FC} .ds-btn-ghost:active{transform:scale(.97)} .ds-btn-ghost:focus-visible{outline:3px solid rgba(0,113,227,.7);outline-offset:2px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field, pressed in slightly, blue halo on focus.",
+      "html": "<label class=\"ds-field\"><span>Your name</span><input class=\"ds-input\" placeholder=\"Nok\"></label>",
+      "css": ".ds-field{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:block} .ds-field>span{display:block;font-size:15px;font-weight:600;color:#1D1D1F;margin-bottom:8px} .ds-input{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;width:100%;min-height:50px;border-radius:14px;border:1px solid #CBD3DB;background:#fff;padding:12px 14px;font-size:17px;color:#1D1D1F;box-shadow:inset 1px 2px 3px rgba(31,49,77,.05);caret-color:#FF6A00;transition:border-color 160ms ease,box-shadow 160ms ease} .ds-input::placeholder{color:#626977} .ds-input:focus{outline:none;border-color:#0071E3;box-shadow:0 0 0 4px rgba(0,113,227,.18)}"
+    },
+    {
+      "name": "Table Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Segmented choice led by a small painted container swatch.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\"><i class=\"ds-sw\" style=\"background-color:#B8442E\"></i>Table 1</button><button class=\"ds-chip\" aria-pressed=\"false\"><i class=\"ds-sw\" style=\"background-color:#2F5F8A\"></i>Table 2</button></div>",
+      "css": ".ds-chips{display:flex;gap:8px;flex-wrap:wrap} .ds-chip{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:0 16px 0 12px;border-radius:999px;border:1px solid #CBD3DB;background:#fff;color:#1D1D1F;font-weight:600;font-size:15px;cursor:pointer;box-shadow:1px 1px 2px rgba(31,49,77,.06),1px 3px 8px -2px rgba(31,49,77,.07);transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease} .ds-chip:active{transform:scale(.96)} .ds-chip:focus-visible{outline:3px solid rgba(0,113,227,.7);outline-offset:2px} .ds-chip[aria-pressed=true]{background:#1D1D1F;border-color:#1D1D1F;color:#F1F2F1} .ds-sw{width:18px;height:12px;border-radius:2.5px;background-image:repeating-linear-gradient(90deg,transparent 0 3px,rgba(0,0,0,.16) 3px 4px),linear-gradient(180deg,rgba(255,255,255,.35),transparent 50%,rgba(0,0,0,.18));box-shadow:1px 1.5px 2px rgba(0,0,0,.18)}"
+    },
+    {
+      "name": "Glass Tab Bar",
+      "kind": "nav",
+      "refersTo": "tabbar",
+      "description": "Floating frosted capsule of four tabs; active tab in rust ink on an orange wash.",
+      "html": "<nav class=\"ds-tabbar ds-lip\"><a class=\"on\" href=\"#\">Live</a><a href=\"#\">Route</a><a href=\"#\">Toolkit</a><a href=\"#\">Manifest</a></nav>",
+      "css": ".ds-tabbar{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;position:relative;display:grid;grid-template-columns:repeat(4,1fr);height:64px;padding:6px;border-radius:32px;background:rgba(255,255,255,.66);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);box-shadow:inset 0 0 0 .5px rgba(31,49,77,.10),4px 10px 24px -6px rgba(31,49,77,.16),16px 36px 72px -22px rgba(31,49,77,.30)} .ds-tabbar a{display:flex;align-items:center;justify-content:center;border-radius:26px;color:#626977;text-decoration:none;font-size:11px;font-weight:600;transition:color 160ms ease,background-color 200ms ease} .ds-tabbar a:hover{color:#1D1D1F} .ds-tabbar a:focus-visible{outline:3px solid rgba(0,113,227,.7)} .ds-tabbar a.on{color:#B84A00;background:rgba(255,106,0,.12)} .ds-lip::before{content:'';position:absolute;inset:0;border-radius:inherit;padding-top:1px;pointer-events:none;background:linear-gradient(to bottom,rgba(255,255,255,.98),transparent 42%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White surface, 0.5px rim and a down-right cast.",
+      "html": "<section class=\"ds-card\"><h3>Planner</h3><p>7,400 XP. 3,600 to Dispatcher.</p></section>",
+      "css": ".ds-card{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;background:#fff;border-radius:22px;padding:20px;color:#1D1D1F;box-shadow:inset 0 0 0 .5px #CBD3DB,1px 1px 2px rgba(31,49,77,.06),1px 3px 8px -2px rgba(31,49,77,.07)} .ds-card h3{margin:0 0 4px;font-size:24px;font-weight:700;letter-spacing:-.025em} .ds-card p{margin:0;font-size:15px;color:#626977;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Answer Tile",
+      "kind": "custom",
+      "refersTo": "answer-tile-a",
+      "description": "A painted container door in one of four port paints, always with its shape.",
+      "html": "<button class=\"ds-tile\" style=\"--tile:#B8442E\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 3 22 20H2z\"/></svg>Re-route via Map Ta Phut</button>",
+      "css": ".ds-tile{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:12px;min-height:120px;width:100%;padding:16px;border-radius:22px;border:0;color:#fff;text-align:left;font-weight:700;font-size:19px;line-height:1.25;letter-spacing:-.015em;cursor:pointer;background:repeating-linear-gradient(90deg,transparent 0 11px,rgba(0,0,0,.045) 11px 12px),linear-gradient(180deg,rgba(255,255,255,.20),transparent 38%,rgba(0,0,0,.12)),var(--tile);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 -3px 0 rgba(0,0,0,.12),2px 7px 16px -7px color-mix(in srgb,var(--tile) 55%,#000);transition:transform 140ms cubic-bezier(.23,1,.32,1)} .ds-tile:active{transform:scale(.96)} .ds-tile:focus-visible{outline:3px solid rgba(0,113,227,.7);outline-offset:2px}"
+    },
+    {
+      "name": "Route Stop",
+      "kind": "custom",
+      "refersTo": "route-stop-done",
+      "description": "Numbered container on the shipment route: steel once started, locked steel ahead; travelled line solid orange, road ahead dashed.",
+      "html": "<ol class=\"ds-route\"><li class=\"done\"><span class=\"ds-stop\">1</span>Leg 1</li><li><span class=\"ds-stop locked\">2</span>Leg 2</li></ol>",
+      "css": ".ds-route{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;list-style:none;margin:0;padding:0;display:grid;gap:18px;position:relative} .ds-route li{display:flex;align-items:center;gap:14px;font-weight:700;font-size:19px;letter-spacing:-.02em;color:#1D1D1F;position:relative} .ds-route li.done::after{content:'';position:absolute;left:22px;top:30px;height:18px;border-left:3px solid #FF6A00} .ds-stop{display:grid;place-items:center;width:46px;height:30px;border-radius:4px;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(0,0,0,.075) 5px 6px),linear-gradient(180deg,#FF8D45,#FF6A00 52%,#D35400);color:#1D1D1F;box-shadow:inset 0 1px 0 rgba(255,255,255,.42),inset 0 -2px 0 rgba(0,0,0,.10),2px 6px 14px -5px rgba(178,72,0,.55)} .ds-stop.locked{background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(0,0,0,.075) 5px 6px),linear-gradient(180deg,#E8ECF1,#CCD4DD 52%,#A8B2BE);color:#3F4654;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -2px 0 rgba(0,0,0,.06),1px 1px 2px rgba(31,49,77,.06)}"
+    },
+    {
+      "name": "Label Stock",
+      "kind": "card",
+      "refersTo": "label-stock",
+      "description": "The participant's own work: white stock, 2.5px black rule, mono data, barcode. Same in both themes.",
+      "html": "<article class=\"ds-label\"><span class=\"ds-mono\">MANIFEST · ROOM KLD7</span><h2>Nok Srisuk</h2><span class=\"ds-mono\">PLANNER · 7,400 XP</span><div class=\"ds-barcode\"></div></article>",
+      "css": ".ds-label{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;background:#FFFEFB;color:#1D1D1F;border:2.5px solid #1D1D1F;border-radius:10px;padding:16px 18px;box-shadow:2px 4px 10px -3px rgba(31,49,77,.10),8px 18px 38px -14px rgba(31,49,77,.20)} .ds-label h2{margin:8px 0 2px;font-size:32px;font-weight:700;letter-spacing:-.022em} .ds-mono{display:block;font-family:ui-monospace,'SF Mono','JetBrains Mono',Menlo,monospace;font-size:12px;font-weight:600;letter-spacing:.06em;color:#5E6470} .ds-barcode{height:28px;margin-top:14px;background:repeating-linear-gradient(90deg,#1D1D1F 0 2px,transparent 2px 4px,#1D1D1F 4px 5px,transparent 5px 8px,#1D1D1F 8px 11px,transparent 11px 12px,#1D1D1F 12px 13px,transparent 13px 16px)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Port at First Light",
+    "overview": "Manifest lives in one place: the container port at Laem Chabang just after dawn. One low sun sits above-left, so every shadow in the product falls down and to the right, tinted from the sky rather than black. A theme here is a place with a lighting model, not a list of hex codes. Night mode is the same port re-lit: the sun becomes a cool moon, the horizon warms, and the crane lamps on the skyline come on. It is never an inversion.\n\nThe interface reads as an Apple-made app (SF Pro, iOS large titles, frosted bars, spring motion, tabular numerals) built from three modeled materials, each with a lit crown, a body and a shaded belly. Frosted glass is the chrome the app owns. Painted container steel in safety orange is anything you tap or earn. Label paper is the participant's own work, and it stays white in both themes because a label is a physical object. The sky scene (far haze down to warm sand, a port horizon of cranes, a ship and container stacks) opens the phone's join, greeting and route screens and sits behind the projector for the room's moments.\n\nDensity is calm and phone-first: one clear thing to do per screen, a 640px column, generous 20px card padding. The projector is a light keynote stage read from the back of a bright room. The host console is a macOS-style three-pane workspace on the same ground. The system rejects flat white SaaS, Kahoot candy colors, and the dark neon \"AI\" look.",
+    "keyCharacteristics": [
+      "One light source, above-left. Every cast shadow offsets down-right and is blurred.",
+      "Three materials with three jobs: glass for chrome, steel for action and reward, paper for what the participant owns.",
+      "Safety orange is the only brand color; information blue is used sparingly.",
+      "Containers are the recurring unit: route stops, rank stacks, podium blocks, table swatches and answer tiles are all painted boxes with ribs.",
+      "Night is the same place re-lit, never a palette swap."
+    ],
+    "rules": [
+      {
+        "name": "The One Paint Rule",
+        "body": "Safety orange is the only brand color, and it appears as steel (gradient plus ribs) on what you tap or earn. A second accent hue never takes its job.",
+        "section": "colors"
+      },
+      {
+        "name": "The Same Port Rule",
+        "body": "Dark mode re-lights the scene: night sky stops, a moon in place of the sun, lamps on the cranes, black-based casts. Label stock and answer paints do not change.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shape Plus Color Rule",
+        "body": "An answer is never identified by color alone; every tile and result bar carries its shape.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every changing number (points, XP, timers, counts, ranks) uses tabular numerals, so digits never jitter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Type is sentence case throughout. Uppercase appears only as mono data on label stock, in the room code, and in the four lab-type tags (READ, DRAFT, SCREEN, EXPLAIN: 11px, 700, 0.04em, on a status wash), which are short codes stamped beside a title, never headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Clear Sky Rule",
+        "body": "On the projector the sky is shown for the room's moments (join, stage, leaderboard, podium, certificates) and fades out over 0.7s when a question or board is up, so the content wins.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Sun Rule",
+        "body": "Every cast offsets right and down, never up or left, and every lit edge is on the top or left.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** offset every shadow down-right and light every edge from the top-left (the One Sun Rule).",
+      "**Do** paint anything tappable or earned as orange steel: lit-to-shade gradient, vertical ribs, warm steel cast.",
+      "**Do** show locked progress as the same object desaturated (locked-lit to locked-shade), never greyed-out flat or broken.",
+      "**Do** put the participant's own work on white label stock with a 2.5px black rule, in both themes.",
+      "**Do** pair every answer color with its shape (triangle, diamond, circle, square).",
+      "**Do** use rust ink (brand-text) for orange type on light, and tabular numerals for every number that changes.",
+      "**Do** build dark mode by swapping the scene to night (moon, crane lamps, black casts), not by inverting.",
+      "**Do** clear the projector sky when a question or board is up."
+    ],
+    "donts": [
+      "**Don't** use safety orange (steel-body) as text on a light ground; it fails contrast. Use brand-text.",
+      "**Don't** introduce a second brand hue, candy-bright answer colors, or a dark neon look.",
+      "**Don't** use zero-blur offset shadows or shadows cast up or to the left.",
+      "**Don't** theme label stock or the answer paints for dark mode.",
+      "**Don't** set type in uppercase outside mono label data, the room code and the lab-type tags, and don't put a small label above a headline as a kicker.",
+      "**Don't** fall back to a bare system font stack without Inter loaded; every page head loads Inter and JetBrains Mono."
+    ]
+  }
+}
